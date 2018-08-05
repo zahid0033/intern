@@ -1,0 +1,199 @@
+<html>
+	<head>
+		<link rel="icon" href="img/favicon.ico" type="image/ico" sizes="16x16">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+	    <script src="js/jquery.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    
+		<script language="Javascript">
+
+            function postRequest(strURL)
+            {
+                var xmlHttp;
+                if (window.XMLHttpRequest) // Mozilla, Safari, ...
+                {
+                    var xmlHttp = new XMLHttpRequest();
+                    console.log("normal");
+                }
+                else if (window.ActiveXObject) // IE
+                {
+                    var xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                    console.log("MS");
+                }
+                else
+                {
+                    alert("your browser does not support AJAX");
+                    return;
+                }
+                xmlHttp.open('POST', strURL, true);
+                xmlHttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xmlHttp.onreadystatechange = function()
+                {
+
+                    if (xmlHttp.readyState == 4)
+                    {
+                        updatepage(xmlHttp.responseText);
+                    }
+                }
+                xmlHttp.send(strURL);
+            }
+            function updatepage(str)
+            {
+                document.getElementById("msg").innerHTML = str;
+            }
+            function show()
+            {
+                var div=document.getElementById("msg");
+                console.log('result got');
+                div.innerHTML = '<img src="img/loader.gif" />';
+                console.log('loader got');
+                var email=document.getElementById("email");
+                var emailvalue=email.value;
+                var url="emailcheck.php?emailvalue="+emailvalue;
+                postRequest(url);
+                console.log('request sent');
+
+            }
+		</script>
+
+	</head>
+	<body>
+        
+        
+        <!-- *********** Navbar **************  -->
+    <section id="navbar">
+        
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <div class="logo">
+                        <a class="navbar-brand" href="index.php"><img  src="images/intern.png" alt="" style="height: 33px;"></a>
+                    </div>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="#about_our_code">About us</a></li>
+                        <li><a href="#recent_courses">Services</a></li>
+                        <li><a href="#resource_person">Portfolio</a></li>
+                        <li><a href="#webcode_offer">Offer</a></li>
+                        <li><a href="#latest_blog">Blog</a></li>
+                        <li><a href="#contact_us">Contact us</a></li>
+                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        
+    </section>
+
+		<div class="container" style="background: #dceefe">
+        <div class="empReg">
+			<h2 style="text-align: center;"> Emloyee Registration</h2><hr>
+			
+			<div class="form-group">
+				<form method="post" action="regm.php" name="reg">
+				
+				
+				<div class="form-group row">
+                    <label class="col-sm-3 col-form-label">User Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="un" class="form-control" placeholder="Full Name" required />
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">E-mail</label>
+                        <div class="col-sm-9">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="e.g : abc@gnail.com" required/><br/>
+				        	<input type="button" name="checkemail" class="btn btn-info" onclick="JavaScript:show()" value="Check Email"/><br>
+                        </div>
+                        
+	            		<div id="msg"></div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Password</label>
+                        <div class="col-sm-9">
+                            <input type="password" name="pw" class="form-control" required />
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Confirm Password</label>
+                        <div class="col-sm-9">
+                            <input type="password" name="pw" class="form-control" required />
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Mobile Number</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="input-medium bfh-phone form-control" data-format="+1 (ddd) ddd-dddd" placeholder="e.g : 015XXXXXXXX" required>
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Designation</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="un" class="form-control" placeholder="e.g : CEO" required />
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Company's Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="un" class="form-control" placeholder="e.g : Amazon" required />
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Company's Address</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="un" class="form-control" placeholder="e.g : 14/a Rampura,Dhaka"/>
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Company's Web</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="un" class="form-control" placeholder="e.g : https://linkedin.com"/>
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">industry type <span class="error">*</span></label>
+                        <div class="col-sm-9">
+                            <select name="fathrNatnlity" id="country" class="btn  col-sm-12">
+                                <option value=" ">- select -</option>
+                                <option value="Bangladesh ">Bangladesh</option>
+                                <option value="India ">India</option>
+                                <option value="Pakistan ">Pakistan</option>
+                            </select>
+                            <span class="error_box"></span>
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Business Description</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="un" class="form-control"/>
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+					<input type="submit" name="submit" value="submit" class="btn btn-success" style="float: right" />
+                </div>
+                
+					
+				</form>
+			</div>
+			
+			</div>
+			
+		</div>
+		
+    <script src="js/bootstrap.min.js"></script>
+	</body>

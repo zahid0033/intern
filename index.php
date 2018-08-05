@@ -1,98 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+/*
+created by 
+* Name :Zahid Hossain
+* Date :27-july-18
+*/
+session_start();
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Intern</title>
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Important Owl stylesheet -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <!-- Default Theme -->
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> </head>
+include "includes/header.php";
 
-<body>
+
+?>
+
     <!-- ******* start ******* -->
-    <section id="start">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="col-sm-4">
-                            <div class="contact">
-                                <a href="#"><img src="images/callus.png" alt=""></a>
-                                <p>English</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="contact">
-                                <a href="#"><img src="images/languages.png" alt=""></a>
-                                <p>English</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="contact">
-                                <a href="#"><img src="images/email.png" alt=""></a>
-                                <p>English</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="social">
-                            <div class="col-sm-6">
-                                <div class="contact pull-right">
-                                    <a href=""><img src="images/signin.png" alt=""></a>
-                                    <p>Sign in / <a href="#">Register</a></p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="list-inline pull-right social">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include "includes/head.php" ?>
+    
     <!-- *********** Navbar **************  -->
-    <section id="navbar">
-        <div class="container">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                    <div class="logo">
-                        <a class="navbar-brand" href="#"><img src="images/intern.png" alt=""></a>
-                    </div>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about_our_code">About us</a></li>
-                        <li><a href="#recent_courses">Services</a></li>
-                        <li><a href="#resource_person">Portfolio</a></li>
-                        <li><a href="#webcode_offer">Offer</a></li>
-                        <li><a href="#latest_blog">Blog</a></li>
-                        <li><a href="#contact_us">Contact us</a></li>
-                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </nav>
-        </div>
-    </section>
+    
+    <?php include "includes/navbar.php" ?>
     <!-- /.navbar-collapse -->
     <!-- *********** slider **************** -->
     <section id="slider">
@@ -629,61 +553,4 @@
         </div>
     </section>
     
-    <section id="last">
-        <div class="container">
-           <div class="last">
-               <p>&copy; 2017 <span class="diff">i</span> ntern Web Template By @ <span><a href="https://www.facebook.com/zahid.shuvro.5" target="_blank">Md. Zahid Hossain</a></span></p>
-           </div>
-            
-        </div>
-    </section>
-    
-    
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/isotop.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/swiper.jquery.min.js"></script>
-    <script src="js/isotope-docs.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo").owlCarousel({
-                navigation: false, // Show next and prev buttons
-                slideSpeed: 300
-                , paginationSpeed: 400
-                , singleItem: true
-                    // "singleItem:true" is a shortcut for:
-                    // items : 1, 
-                    // itemsDesktop : false,
-                    // itemsDesktopSmall : false,
-                    // itemsTablet: false,
-                    // itemsMobile : false
-            });
-        });
-        // http://owlgraphic.com/owlcarousel/index.html#how-to
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination'
-            , slidesPerView: 2
-            , paginationClickable: true
-            , spaceBetween: 30
-            , autoplay: true
-            , speed: 5000
-        });
-    </script>
-    <script>
-        /*-----for swiper----*/
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination'
-            , paginationClickable: true
-            , spaceBetween: 30
-            , slidesPerView: 1
-            , effect: ''
-            , autoplay: true
-            , speed: 4000
-        });
-    </script>
-</body>
-
-</html>
+    <?php include "includes/footer.php"?>
