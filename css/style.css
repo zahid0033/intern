@@ -106,7 +106,7 @@ p{
 }
 
 
-******* slider************* */
+/* ****** slider************* */
 
 #slider{
     padding-bottom: 5em;
@@ -147,6 +147,69 @@ p{
     letter-spacing: 5px;
     color: #5cb85c
 }
+
+
+
+
+/* *************** Category *************** */
+#category{
+    background-image: url(../images/catgpic.jpg);
+    background-color: #198a23;
+    background-position: 0 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    overflow: hidden;
+}
+.catgDegree{
+    color: blue;
+}
+.catgDegree i{
+    color: blue;
+}
+.catgDegree a{
+    text-decoration: none;
+    color: blue;
+    margin-left: 1em;
+}
+
+.location{
+   color: black;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: 73%;
+    position: relative;
+    bottom: 24%;
+    min-height: 400px;
+    margin: 6px 0 7px 0;
+}
+.location p a{
+    text-decoration: none;
+    color: wheat;
+    border: 3px solid aliceblue;
+    margin: 2px 10px 10px 5px;
+    padding: 7px 12px 7px 12px;
+    border-radius: 5px;
+    transition: .5s;
+}
+.location p{
+    margin-top: 25px;
+}
+
+.location a:hover{
+    background: #ffffff;
+    letter-spacing: 3px;
+    color: #5cb85c
+}
+
+
+
+/* *************** category 2 *************** */
+#category2{
+    margin: 30px 0px 20px 0px;
+    min-height: 300px;
+}
+
 
 /* *************** about_our_code *************** */
 

@@ -30,7 +30,7 @@
                         <li><a href="#recent_courses">Services</a></li>
                         <li><a href="#resource_person">Portfolio</a></li>
                         <li><a href="#webcode_offer">Offer</a></li>
-                        <li><a href="jobPost.php">Blog</a></li>
+                        <li><a href="jobPost.php?location=Dhaka">Blog</a></li>
                         <li><a href="#contact_us">Contact us</a></li>
                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>';
                       }

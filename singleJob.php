@@ -55,7 +55,7 @@
             }
             else
             {
-                echo "Nothing found in in db";
+                echo "Nothing founds in in db";
             }
     
     

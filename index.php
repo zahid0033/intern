@@ -18,7 +18,7 @@ include "includes/header.php";
     
     <?php include "includes/navbar.php" ?>
     <!-- /.navbar-collapse -->
-    <!-- *********** slider **************** -->
+    <!-- *********** slider **************** 
     <section id="slider">
         <div id="owl-demo" class="owl-carousel owl-theme">
             <div class="item show">
@@ -29,8 +29,8 @@ include "includes/header.php";
             </div>
             <div class="item show">
                 <div class="slider_text">
-                    <h2>We Provide</h2>
-                    <h1>Free Services</h1>
+                    <h2>Welcome to</h2>
+                    <h1>WebCode Institute</h1>
                     <p>Lorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply </p> <a href="#" class="btn btn-success">Purchase Now</a> <a href="#" class="btn btn-success">View Courses</a> </div>
             </div>
             <div class="item show">
@@ -40,6 +40,98 @@ include "includes/header.php";
                     <p>Lorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply </p> <a href="#" class="btn btn-success">Purchase Now</a> <a href="#" class="btn btn-success">View Courses</a> </div>
             </div>
         </div>
+    </section>
+    -->
+    
+       <!-- ************ Category ************ -->
+    <section id="category">
+        
+            
+            <div class="category ">
+                  
+                  <div class="col-sm-8 catgDegree">
+                      <h3>Categories</h3>
+                      <?php include "includes/allQuery.php"; ?>
+                      
+                      <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                      
+                      
+                      
+                  </div>
+                  <div class="col-sm-4 ">
+                    
+                    
+                    <div class="location col-sm-12">
+                     
+                       
+                          <h3 style="text-align:center; color:white; ">Divisional Job</h3>
+                          
+                           <?php include "includes/allQuery.php"; ?>
+
+                           <div class="col-sm-6">
+                              
+                               <p><a href="jobPost.php?location=Dhaka">Dhaka(<?php echo $count1 ?>)</a></p>
+                               <p><a href="jobPost.php?location=Chittagong">Chittagong(<?php echo $count7 ?>)</a></p>
+                                <p><a href="jobPost.php?location=Comilla">Rajshahi(<?php echo $count3 ?>)</a></p>
+                                <p><a href="jobPost.php?location=Comilla">Khulna(<?php echo $count3 ?>)</a></p>
+                           </div>
+                           <div class="col-sm-6">
+                               <p><a href="jobPost.php?location=Comilla">Barishal(<?php echo $count4 ?>)</a></p>
+                                <p><a href="jobPost.php?location=Comilla">Sylhet(<?php echo $count5 ?>)</a></p>
+                                <p><a href="jobPost.php?location=Comilla">Mymensingh(<?php echo $count6 ?>)</a></p>
+                                <p><a href="jobPost.php?location=Comilla">Comilla(<?php echo $count7 ?>)</a></p>
+                                
+                           </div>
+                           
+                           <p style="color: white;margin-top: 18em;text-align: center;">Find your desirable internee from your division by just clicking in here</p>
+                        
+                      </div>
+                       
+                        
+                  </div>
+                   
+                    
+                    
+            </div>
+        
+    </section>
+    
+    
+    <!-- ************ Category2 ************ -->
+    <section id="category2">
+        <div class="col-sm-12 catgDegree">
+            <h3><i class="fa fa-bars fa-1x" aria-hidden="true"></i>Categories</h3>
+                      <?php include "includes/allQuery.php"; ?>
+                      
+                      <div class="col-sm-4">
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=NGO/Development">NGO/Development(<?php echo $catgCount2 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                      </div>
+                      <div class="col-sm-4">
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                      </div>
+                      <div class="col-sm-4">
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                      </div>
+                      
+                      
+                      
+                      
+                  </div>
     </section>
 
     <!-- ************ About our Code ************ -->
@@ -64,6 +156,10 @@ include "includes/header.php";
             </div>
         </div>
     </section>
+    
+    
+ 
+    
     <!-- ************ Recent course ************** -->
     <section id="recent_courses">
         <div class="container">
