@@ -29,7 +29,7 @@
                                
                                <?php 
                                 
-                                    if(isset($_SESSION['un'])){
+                                    if(isset($_SESSION['un'])||isset($_SESSION['en'])){
                                         echo '';
                                     }
                                     else{
@@ -41,8 +41,8 @@
                                         <div class="dropdown">
                                           <a class="dropbtn" style="text-decoration:none;margin-right:5px;">Login</a>
                                           <div class="dropdown-content">
-                                            <a href="loginv.html">Candidate</a>
-                                            <a href="#">Employee</a>
+                                            <a href="loginCandidate.php">Candidate</a>
+                                            <a href="loginEmployee.php">Employee</a>
                                             <a href="../Intern/cms/admin/index.php">Admin</a>
                                           </div>
                                         </div>
@@ -50,7 +50,7 @@
                                         <div class="dropdown">
                                           <a class="dropbtn" style="text-decoration:none;"> Register</a>
                                           <div class="dropdown-content">
-                                            <a href="regv.html">Candidate</a>
+                                            <a href="regv.php">Candidate</a>
                                             <a href="#">Employee</a>
                                           </div>
                                         </div>

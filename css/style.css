@@ -162,15 +162,8 @@ p{
     overflow: hidden;
 }
 .catgDegree{
-    color: blue;
-}
-.catgDegree i{
-    color: blue;
-}
-.catgDegree a{
-    text-decoration: none;
-    color: blue;
-    margin-left: 1em;
+    color: white;
+    padding: 25px 9px 4px 9em;
 }
 
 .location{
@@ -180,7 +173,7 @@ p{
     width: 73%;
     position: relative;
     bottom: 24%;
-    min-height: 400px;
+    min-height: 372px;
     margin: 6px 0 7px 0;
 }
 .location p a{
@@ -206,8 +199,44 @@ p{
 
 /* *************** category 2 *************** */
 #category2{
-    margin: 30px 0px 20px 0px;
+    margin: 30px 0px 60px 0px;
     min-height: 300px;
+}
+
+.category2{
+    color: blue;
+    background: #eeebeb;
+    margin-top: 2em;
+    padding: 13px 31px 25px 35px;
+    border-radius: 5px;
+    border-bottom-right-radius: 125px;
+    border-top-left-radius: 125px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.category2 i{
+    color: #04af02;;
+}
+.category2 a{
+    text-decoration: none;
+    color: #0855af;
+    margin-left: 1em;
+    font-size: 16px;
+}
+.category2Left{
+    
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    min-height: 301px;
+    color: white;
+    background: #75cd74;
+    margin-top: 2em;
+    padding: 13px 31px 25px 35px;
+    border-radius: 5px;
+    border-bottom-right-radius: 125px;
+    border-top-left-radius: 125px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 

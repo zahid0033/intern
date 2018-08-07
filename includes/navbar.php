@@ -6,7 +6,7 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     <div class="logo">
-                        <a class="navbar-brand" href="#"><img src="images/intern.png" alt="" style="height: 33px;"></a>
+                        <a class="navbar-brand" href="index.php"><img src="images/intern.png" alt="" style="height: 33px;"></a>
                     </div>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -16,22 +16,32 @@
                        if(isset($_SESSION['un'])){
                             $un= $_SESSION['un'];
                             echo '<li><a href="index.php">Home</a></li>
-                                  <li><a href="#about_our_code">About us</a></li>
+                                  <li><a href="about.php">About us</a></li>
                                   <li><a href="jobPost.php">Blog</a></li>
                                   <li><a href="listdata.php">List Data</a></li>';
-                            echo "<li><a href=\"logoutm.php\">Logout</a></li>";
-                            echo "<li><a href='#' style='float:right;'>"."<span class='label label-info'>Logged in as ".$un."</span></a></li>";
+                            echo "<li><a href=\"logoutVer.php\">Logout</a></li>";
+                           
+                            echo "<li><a href='candProfile.php?user=".$un."' style='float:right;'>"."<span class='label label-info'>".$un."</span></a></li>";
+                       }
+                        else if(isset($_SESSION['en'])){
+                            $en= $_SESSION['en'];
+                            echo '<li><a href="index.php">Home</a></li>
+                                  <li><a href="about.php">About us</a></li>
+                                  <li><a href="jobPost.php">Blog</a></li>
+                                  <li><a href="listdata.php">List Data</a></li>';
+                            echo "<li><a href=\"logoutVer.php\">Logout</a></li>";
+                            echo "<li><a href='empProfile.php?user=".$en."' style='float:right;'>"."<span class='label label-info'>".$en."</span></a></li>";
                        }
                         
                         else{
                        
                   echo' <li><a href="index.php">Home</a></li>
-                        <li><a href="#about_our_code">About us</a></li>
+                        <li><a href="about.php">About us</a></li>
                         <li><a href="#recent_courses">Services</a></li>
                         <li><a href="#resource_person">Portfolio</a></li>
                         <li><a href="#webcode_offer">Offer</a></li>
                         <li><a href="jobPost.php?location=Dhaka">Blog</a></li>
-                        <li><a href="#contact_us">Contact us</a></li>
+                        <li><a href="contact.php">Contact us</a></li>
                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>';
                       }
                         
@@ -40,6 +50,8 @@
                 </div>
                 <!-- /.navbar-collapse -->
             </nav>
+            
+            
         
     </section>
     

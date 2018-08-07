@@ -13,7 +13,7 @@ include "includes/header.php";
         
         <div class="container">
        
-           <h2 style="text-align:center;">My Job</h2>
+           <h2 style="text-align:center;">Job Posts</h2>
 
            <div class="jobPost">            
             
@@ -60,6 +60,9 @@ include "includes/header.php";
                             $postTime = $row['postTime'];
                             $expDate = $row['expDate'];
                             
+                            $daydiff=floor((abs(strtotime($postTime) - strtotime($expDate))/(60*60*24)));
+                            
+                            
                             
                             ?>
                             
@@ -84,7 +87,7 @@ include "includes/header.php";
                                         <p class = "jobpost"><i class="fa fa-line-chart" aria-hidden="true"></i><b>Experience Required : </b><?php echo $expRequirement ?></p>
                                         
                                         
-                                        <p class = "jobpost"><i class="fa fa-clock-o" aria-hidden="true"></i><b>Deadline : </b><?php echo $expDate ?></p>
+                                        <p class = "jobpost"><i class="fa fa-clock-o" aria-hidden="true"></i><b>Deadline : </b><?php echo $daydiff ?> Days left</p>
 
 
                                     </div>

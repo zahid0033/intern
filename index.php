@@ -15,7 +15,6 @@ include "includes/header.php";
     <?php include "includes/head.php" ?>
     
     <!-- *********** Navbar **************  -->
-    
     <?php include "includes/navbar.php" ?>
     <!-- /.navbar-collapse -->
     <!-- *********** slider **************** 
@@ -50,10 +49,13 @@ include "includes/header.php";
             <div class="category ">
                   
                   <div class="col-sm-8 catgDegree">
-                      <h3>Categories</h3>
-                      <?php include "includes/allQuery.php"; ?>
+                      <h3 style="padding-top: 3em;">Hello Interns</h3>
+                     
+                      <h4>We are here for you now </h4>
                       
-                      <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                      <h5>This is one of the largest site for searching interns all over the country</h5>
+                      
+                      <p>Age 25 to 40 years Both males and females are allowed to apply Must be energetic, able to work under pressure and meet deadlines</p>
                       
                       
                       
@@ -96,70 +98,116 @@ include "includes/header.php";
         
     </section>
     
-    
     <!-- ************ Category2 ************ -->
     <section id="category2">
-        <div class="col-sm-12 catgDegree">
-            <h3><i class="fa fa-bars fa-1x" aria-hidden="true"></i>Categories</h3>
+      
+      <div class="container col-sm-12">
+      
+       <div class="col-sm-3 category2Left">
+           <h3>Hello bangladesh</h3>
+           <h5>We are here for you</h5>
+           <p>Who wants internee urgently just click here</p>
+           <p>Who wants internee urgently just click here Who wants internee urgently just click here Who wants internee urgently just click here</p>
+           
+           <button class="btn btn-primary" style="margin-top:2em;">Visit Page</button>
+       </div>
+        <div class="col-sm-9 category2">
+            <h3 style="margin-left: 15px;color:#17aa10;"><i class="fa fa-bars fa-1x" aria-hidden="true" style="margin-right:10px;"></i>Categories</h3>
                       <?php include "includes/allQuery.php"; ?>
                       
                       <div class="col-sm-4">
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=NGO/Development">NGO/Development(<?php echo $catgCount2 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Accounting/Finance">Accounting/Finance(<?php echo $catgCount1 ?>)</a></p>
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=NGO/Development">NGO/Development(<?php echo $catgCount2 ?>)</a></p>
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Commercial/Supply Chain">Commercial/Supply Chain(<?php echo $catgCount3 ?>)</a></p>
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Education/Training">Education/Training(<?php echo $catgCount4 ?>)</a></p>
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Engineer/Architects">Engineer/Architects(<?php echo $catgCount5 ?>)</a></p>
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Garments/Textile">Garments/Textile(<?php echo $catgCount6 ?>)</a></p>
                       </div>
                       <div class="col-sm-4">
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=HR/Org. Development">HR/Org. Development(<?php echo $catgCount7 ?>)</a></p>
+                          
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Gen Mgt/Admin">Gen Mgt/Admin(<?php echo $catgCount8 ?>)</a></p>
+                          
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Design/Creative">Design/Creative(<?php echo $catgCount9 ?>)</a></p>
+                          
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Production/Operation">Production/Operation(<?php echo $catgCount10 ?>)</a></p>
+                          
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Hospitality/ Travel/ Tourism">Hospitality/ Travel/ Tourism(<?php echo $catgCount11 ?>)</a></p>
+                          
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Beauty Care/ Health & Fitness">Beauty Care/ Health /Fitness(<?php echo $catgCount12 ?>)</a></p>
                       </div>
                       <div class="col-sm-4">
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
-                          <p><i class="fa fa-clock-o" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Electrician/ Construction/ Repair">Electrician/ Construction/ Repair(<?php echo $catgCount13 ?>)</a></p>
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=IT/Telecommunication">IT/Telecommunication(<?php echo $catgCount14 ?>)</a></p>
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Marketing/Sales">Marketing/Sales(<?php echo $catgCount15 ?>)</a></p>
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Customer Support/Call Centre">Customer Support/Call Centre(<?php echo $catgCount16 ?>)</a></p>
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Media/Ad./Event Mgt">Media/Ad./Event Mgt(<?php echo $catgCount17 ?>)</a></p>
+                          
+                          <p><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="jobPost.php?category=Medical/Pharma">Medical/Pharma(<?php echo $catgCount18 ?>)</a></p>
                       </div>
                       
                       
                       
                       
                   </div>
+                  
+     </div> 
+                  
     </section>
-
-    <!-- ************ About our Code ************ -->
-    <section id="about_our_code">
-        <div class="container">
-           <div class="heading">
-            <h2>About Our Code</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
-        </div>
-            <div class="about">
-                <div class="col-sm-6 col-md-6"> <img src="images/grouppic.jpg" alt="group" class="img-responsive"> </div>
-                <div class="col-sm-6 col-md-6">
-                    <div class="para">
-                        <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy text of the printing and
-                            <br>
-                            <br>
-                            <br> typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-                        <button class="btn btn-success"> Meet Our Team </button>
-                    </div>
+    
+    <!-- ************ search job ************ -->
+    <section id="search">
+        <div class="container col-sm-12">
+            <p>have you any thing ? </p>
+            <form action="search.php">
+               
+                <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">industry type <span class="error">*</span></label>
+                        <div class="col-sm-9">
+                            <select name="fathrNatnlity" id="country" class="btn  col-sm-12">
+                                <option value=" ">- select -</option>
+                                <option value="Bangladesh ">Bangladesh</option>
+                                <option value="India ">India</option>
+                                <option value="Pakistan ">Pakistan</option>
+                            </select>
+                            <span class="error_box"></span>
+                        </div>
                 </div>
-            </div>
+                
+                <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">industry type <span class="error">*</span></label>
+                        <div class="col-sm-9">
+                            <select name="fathrNatnlity" id="country" class="btn  col-sm-12">
+                                <option value=" ">- select -</option>
+                                <option value="Bangladesh ">Bangladesh</option>
+                                <option value="India ">India</option>
+                                <option value="Pakistan ">Pakistan</option>
+                            </select>
+                            <span class="error_box"></span>
+                        </div>
+                </div>
+                
+                <input type="submit" name="submit" value="search">
+                
+                
+            </form>
         </div>
     </section>
-    
-    
  
-    
     <!-- ************ Recent course ************** -->
     <section id="recent_courses">
         <div class="container">
@@ -204,6 +252,7 @@ include "includes/header.php";
             
         </div>
     </section>
+    
     <!-- *************** Webcode Gallery ******************* -->
     <section id="webcode_gallery">
         <div class="container">
@@ -286,6 +335,7 @@ include "includes/header.php";
             </div>
         </div>
     </section>
+    
     <!--  ************** webcode offer ***************-->
     <section id="webcode_offer">
         <div class="container">
@@ -365,6 +415,7 @@ include "includes/header.php";
             </div>
         </div>
     </section>
+    
     <!-- ***************** resource person *********** -->
     <section id="resource_person">
         <div class="container">
@@ -394,6 +445,7 @@ include "includes/header.php";
             </div>
         </div>
     </section>
+    
     <!-- ***************** What people say **************  -->
     <section id="what_people_say">
         <div class="container">
@@ -455,6 +507,7 @@ include "includes/header.php";
             </div>
         </div>
     </section>
+    
     <!-- *************** Latest_blog **************** -->
     <section id="latest_blog">
         <div class="container">
@@ -484,6 +537,7 @@ include "includes/header.php";
             </div>
         </div>
     </section>
+    
     <!-- **************** Our client logo ************** -->
     <section id="client_logo">
         <div class="container">
@@ -527,57 +581,7 @@ include "includes/header.php";
             <!-- swipper container end-->
         </div>
     </section>
-    <!-- ****************** our contact us *************** -->
-    <section id="contact_us">
-        <div class="container">
-            <div class="heading">
-                <h2>our contact us</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
-            </div>
-            <div class="adress">
-                <div class="row">
-                    <div class="col-sm-4 adress1"> <i class="fa fa-mobile" aria-hidden="true"></i>
-                        <div class="adress1_text"> <span><span>+ 326 581 2547 , 021 583</span>
-                            <br><span>+88 019 239 702 12, </span></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 adress1"> <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <div class="adress1_text"> <span><span>Suite 02, Level 12, Sahera Tropical Center 218 </span>
-                            <br><span>New Elephant Road, Dhaka - 1205 </span></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 adress1"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <div class="adress1_text"> <span><span>upport@gmail.com</span>
-                            <br><span>Info@gmail.com </span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="adress2">
-               <div class="row">
-                <div class="col-sm-6">
-                   <form action="">
-                        <div class="form-group">
-                            <input type="text" name="" class="form-control required" placeholder="Your Name *">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="" class="form-control required" placeholder="Your Email *">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" id="" class="form-control" rows="6" placeholder="Your Message *"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="" class="form-control">
-                        </div>
-                    </form>
-                </div>
-                <div class="col-sm-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14606.344743300535!2d90.4240397303657!3d23.762131753335787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b80a03c8e22f%3A0xd52685f4a2fe003c!2sBanasree%2C+Dhaka%2C+Bangladesh!5e0!3m2!1sen!2s!4v1484271141831" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!-- **************** footer ******************* -->
     <section id="footer">
         <div class="container">

@@ -30,7 +30,7 @@
     $catg9 = "select * from jobpost where browseCatg = 'Design/Creative' ";
     $catg10 = "select * from jobpost where browseCatg = 'Production/Operation' ";
     $catg11 = "select * from jobpost where browseCatg = 'Hospitality/ Travel/ Tourism' ";
-    $catg12 = "select * from jobpost where browseCatg = 'Beauty Care/ Health & Fitness' ";
+    $catg12 = "select * from jobpost where browseCatg = 'Beauty Care/ Health /Fitness' ";
     $catg13 = "select * from jobpost where browseCatg = 'Electrician/ Construction/ Repair' ";
     $catg14 = "select * from jobpost where browseCatg = 'IT/Telecommunication' ";
     $catg15 = "select * from jobpost where browseCatg = 'Marketing/Sales' ";

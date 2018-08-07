@@ -1,6 +1,8 @@
 
-<?php $id = $_GET['id']; ?>
-<?php
+<?php 
+    $id = $_GET['id']; 
+    
+    session_start();
     include "includes/header.php";
     include "includes/head.php";
     include "includes/navbar.php";
@@ -104,6 +106,16 @@
                    <i class="fa fa-user" aria-hidden="true"></i><p class = "singlePost"><i class="fa fa-user" aria-hidden="true"></i><b>Deadline</b></p>
                    <p><?php echo $expDate ?></p>
                    
+                   <?php
+                        if(isset($_SESSION['un'])){
+                            echo '<a href="index.php" class="btn btn-primary" style="float:right;"> interested </a>';
+                            
+                            echo '<form action="index.php" method="get"><input type="submit" name="submit" value="interested"></form>';
+                        }
+                        else if(isset($_SESSION['en'])){
+                            echo '<a href="index.php" class="btn btn-primary" style="float:right;"> ok </a>';
+                        }
+                   ?>
                    
                </div>
            </div>
