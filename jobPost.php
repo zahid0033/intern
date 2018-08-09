@@ -21,16 +21,17 @@ include "includes/header.php";
 
                     require 'config.php';
 
+                    
                     global $query;
 
                     if(isset($_GET['location'])){
                         $location = $_GET['location']; 
                         
-                        $query = "select * from jobpost where jobLocation = '$location' ";
+                        $query = "select * from jobpost where jobLocation = '$location' AND deletedAt is null order by id desc ";
                     }
                     else if(isset($_GET['category'])){
                         $category = $_GET['category'];
-                        $query = "select * from jobpost where browseCatg = '$category' ";
+                        $query = "select * from jobpost where browseCatg = '$category' AND deletedAt is null order by id desc ";
                     }
 
 

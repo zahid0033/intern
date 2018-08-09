@@ -73,15 +73,15 @@ include "includes/header.php";
                            <div class="col-sm-6">
                               
                                <p><a href="jobPost.php?location=Dhaka">Dhaka(<?php echo $count1 ?>)</a></p>
-                               <p><a href="jobPost.php?location=Chittagong">Chittagong(<?php echo $count7 ?>)</a></p>
-                                <p><a href="jobPost.php?location=Comilla">Rajshahi(<?php echo $count3 ?>)</a></p>
-                                <p><a href="jobPost.php?location=Comilla">Khulna(<?php echo $count3 ?>)</a></p>
+                               <p><a href="jobPost.php?location=Chittagong">Chittagong(<?php echo $count2 ?>)</a></p>
+                                <p><a href="jobPost.php?location=Rajshahi">Rajshahi(<?php echo $count3 ?>)</a></p>
+                                <p><a href="jobPost.php?location=Rangpur">Rangpur(<?php echo $count4 ?>)</a></p>
                            </div>
                            <div class="col-sm-6">
-                               <p><a href="jobPost.php?location=Comilla">Barishal(<?php echo $count4 ?>)</a></p>
-                                <p><a href="jobPost.php?location=Comilla">Sylhet(<?php echo $count5 ?>)</a></p>
-                                <p><a href="jobPost.php?location=Comilla">Mymensingh(<?php echo $count6 ?>)</a></p>
+                               <p><a href="jobPost.php?location=Barishal">Barishal(<?php echo $count5 ?>)</a></p>
+                                <p><a href="jobPost.php?location=Khulna">Khulna(<?php echo $count6 ?>)</a></p>
                                 <p><a href="jobPost.php?location=Comilla">Comilla(<?php echo $count7 ?>)</a></p>
+                                <p><a href="jobPost.php?location=Sylhet">Sylhet(<?php echo $count8 ?>)</a></p>
                                 
                            </div>
                            

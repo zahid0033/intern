@@ -28,7 +28,7 @@
                             echo '<li><a href="index.php">Home</a></li>
                                   <li><a href="about.php">About us</a></li>
                                   <li><a href="jobPost.php">Blog</a></li>
-                                  <li><a href="listdata.php">List Data</a></li>';
+                                  <li><a href="myjob.php">My job posts</a></li>';
                             echo "<li><a href=\"logoutVer.php\">Logout</a></li>";
                             echo "<li><a href='empProfile.php?user=".$en."' style='float:right;'>"."<span class='label label-info'>".$en."</span></a></li>";
                        }

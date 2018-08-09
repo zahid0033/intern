@@ -548,7 +548,7 @@ p{
 }
 /* ************ footer ************** */
 #footer{
-     padding-bottom: 3em;
+    padding-bottom: 3em;
     background: #f8f8f8;
 }
 .blog{
@@ -565,7 +565,7 @@ p{
     color: #48af6d;
 }
 /* **************** last ************** */
-.last{
+#last{
     
 }
 .last p{

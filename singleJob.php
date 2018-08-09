@@ -1,4 +1,3 @@
-
 <?php 
     $id = $_GET['id']; 
     
@@ -124,6 +123,6 @@
         
        </div>
         
-        
 </div>
+   
     <?php include "includes/footer.php" ?>

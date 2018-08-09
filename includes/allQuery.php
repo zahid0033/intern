@@ -1,13 +1,14 @@
  <?php
                         
     require 'config.php';
-    $query1 = "select * from jobpost where jobLocation = 'Dhaka' ";
-    $query2 = "select * from jobpost where jobLocation = 'Chittagong' ";
-    $query3 = "select * from jobpost where jobLocation = 'Rajshahi' ";
-    $query4 = "select * from jobpost where jobLocation = 'Rangpur' ";
-    $query5 = "select * from jobpost where jobLocation = 'Barishal' ";
-    $query6 = "select * from jobpost where jobLocation = 'Khulna' ";
-    $query7 = "select * from jobpost where jobLocation = 'Comilla' ";
+    $query1 = "select * from jobpost where jobLocation = 'Dhaka' AND deletedAt is null order by id desc ";
+    $query2 = "select * from jobpost where jobLocation = 'Chittagong' AND deletedAt is null order by id desc";
+    $query3 = "select * from jobpost where jobLocation = 'Rajshahi' AND deletedAt is null order by id desc";
+    $query4 = "select * from jobpost where jobLocation = 'Rangpur' AND deletedAt is null order by id desc";
+    $query5 = "select * from jobpost where jobLocation = 'Barishal' AND deletedAt is null order by id desc";
+    $query6 = "select * from jobpost where jobLocation = 'Khulna' AND deletedAt is null order by id desc";
+    $query7 = "select * from jobpost where jobLocation = 'Comilla' AND deletedAt is null order by id desc";
+    $query8 = "select * from jobpost where jobLocation = 'Sylhet' AND deletedAt is null order by id desc";
 
 
     $count1 =  mysqli_num_rows(mysqli_query($conn,$query1));
@@ -17,26 +18,27 @@
     $count5 =  mysqli_num_rows(mysqli_query($conn,$query5));
     $count6 =  mysqli_num_rows(mysqli_query($conn,$query6));
     $count7 =  mysqli_num_rows(mysqli_query($conn,$query7));
+    $count8 =  mysqli_num_rows(mysqli_query($conn,$query8));
 
 
-    $catg1 = "select * from jobpost where browseCatg = 'Accounting/Finance' ";
-    $catg2 = "select * from jobpost where browseCatg = 'NGO/Development' ";
-    $catg3 = "select * from jobpost where browseCatg = 'Commercial/Supply Chain' ";
-    $catg4 = "select * from jobpost where browseCatg = 'Education/Training' ";
-    $catg5 = "select * from jobpost where browseCatg = 'Engineer/Architects' ";
-    $catg6 = "select * from jobpost where browseCatg = 'Garments/Textile' ";
-    $catg7 = "select * from jobpost where browseCatg = 'HR/Org. Development' ";
-    $catg8 = "select * from jobpost where browseCatg = 'Gen Mgt/Admin' ";
-    $catg9 = "select * from jobpost where browseCatg = 'Design/Creative' ";
-    $catg10 = "select * from jobpost where browseCatg = 'Production/Operation' ";
-    $catg11 = "select * from jobpost where browseCatg = 'Hospitality/ Travel/ Tourism' ";
-    $catg12 = "select * from jobpost where browseCatg = 'Beauty Care/ Health /Fitness' ";
-    $catg13 = "select * from jobpost where browseCatg = 'Electrician/ Construction/ Repair' ";
-    $catg14 = "select * from jobpost where browseCatg = 'IT/Telecommunication' ";
-    $catg15 = "select * from jobpost where browseCatg = 'Marketing/Sales' ";
-    $catg16 = "select * from jobpost where browseCatg = 'Customer Support/Call Centre' ";
-    $catg17 = "select * from jobpost where browseCatg = 'Media/Ad./Event Mgt' ";
-    $catg18 = "select * from jobpost where browseCatg = 'Medical/Pharma' ";
+    $catg1 = "select * from jobpost where browseCatg = 'Accounting/Finance' AND deletedAt is null order by id desc";
+    $catg2 = "select * from jobpost where browseCatg = 'NGO/Development' AND deletedAt is null order by id desc";
+    $catg3 = "select * from jobpost where browseCatg = 'Commercial/Supply Chain' AND deletedAt is null order by id desc";
+    $catg4 = "select * from jobpost where browseCatg = 'Education/Training' AND deletedAt is null order by id desc";
+    $catg5 = "select * from jobpost where browseCatg = 'Engineer/Architects' AND deletedAt is null order by id desc";
+    $catg6 = "select * from jobpost where browseCatg = 'Garments/Textile' AND deletedAt is null order by id desc";
+    $catg7 = "select * from jobpost where browseCatg = 'HR/Org. Development' AND deletedAt is null order by id desc";
+    $catg8 = "select * from jobpost where browseCatg = 'Gen Mgt/Admin' AND deletedAt is null order by id desc";
+    $catg9 = "select * from jobpost where browseCatg = 'Design/Creative' AND deletedAt is null order by id desc";
+    $catg10 = "select * from jobpost where browseCatg = 'Production/Operation' AND deletedAt is null order by id desc";
+    $catg11 = "select * from jobpost where browseCatg = 'Hospitality/ Travel/ Tourism' AND deletedAt is null order by id desc";
+    $catg12 = "select * from jobpost where browseCatg = 'Beauty Care/ Health /Fitness' AND deletedAt is null order by id desc";
+    $catg13 = "select * from jobpost where browseCatg = 'Electrician/ Construction/ Repair' AND deletedAt is null order by id desc";
+    $catg14 = "select * from jobpost where browseCatg = 'IT/Telecommunication' AND deletedAt is null order by id desc";
+    $catg15 = "select * from jobpost where browseCatg = 'Marketing/Sales' AND deletedAt is null order by id desc";
+    $catg16 = "select * from jobpost where browseCatg = 'Customer Support/Call Centre' AND deletedAt is null order by id desc";
+    $catg17 = "select * from jobpost where browseCatg = 'Media/Ad./Event Mgt' AND deletedAt is null order by id desc";
+    $catg18 = "select * from jobpost where browseCatg = 'Medical/Pharma' AND deletedAt is null order by id desc";
 
 
 
