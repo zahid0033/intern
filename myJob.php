@@ -33,14 +33,11 @@ include "includes/navbar.php";
             $eId = $row['eId'];
             
             $query = "select * from jobpost where empId = '$eId' AND deletedAt is null order by id desc ";
-            
-                
-                
+                                        
             $output = mysqli_query($conn,$query);
+            
             if(mysqli_num_rows($output) > 0){
                 while($row = mysqli_fetch_assoc($output)){
-                    
-                    
                     
                     echo "<tr>"; 
 					echo "<td>".$row['id']."</td>";

@@ -27,7 +27,20 @@
             
             <div class="container">
                <h2 style="text-align:center;" >Profile</h2>
-               <button class="btn btm-primary" style="float:right;"> Edit </button>
+               
+               
+               <?php
+                    if($_SESSION['en']){
+                        echo '';
+                    }
+                    else{
+                            echo '<button class="btn btm-primary" style="float:right;"> Edit </button>';
+                    }
+                ?>
+               
+               
+               
+               
                 <div class="col-sm-12">
                    
                     <p class = "singlePost"><i class="fa fa-clock-o" aria-hidden="true"></i><b>Name : </b> <?php echo $cName ?> </p>

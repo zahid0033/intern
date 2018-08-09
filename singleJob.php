@@ -107,9 +107,8 @@
                    
                    <?php
                         if(isset($_SESSION['un'])){
-                            echo '<a href="index.php" class="btn btn-primary" style="float:right;"> interested </a>';
+                            echo '<a href="candidate/applyJob.php?id='.$id.' " class="btn btn-primary" style="float:right;"> Apply </a>';
                             
-                            echo '<form action="index.php" method="get"><input type="submit" name="submit" value="interested"></form>';
                         }
                         else if(isset($_SESSION['en'])){
                             echo '<a href="index.php" class="btn btn-primary" style="float:right;"> ok </a>';
