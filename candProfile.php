@@ -1,5 +1,7 @@
 <?php
     session_start();
+
+    
     require "config.php";
     include "includes/header.php";
     include "includes/head.php";
@@ -30,11 +32,12 @@
                
                
                <?php
-                    if($_SESSION['en']){
-                        echo '';
+                    if(isset($_SESSION['un'])){
+                        echo '<button class="btn btm-primary" style="float:right;"> Edit </button>';
+                        
                     }
                     else{
-                            echo '<button class="btn btm-primary" style="float:right;"> Edit </button>';
+                            echo '';
                     }
                 ?>
                
@@ -62,6 +65,7 @@
             
      <?php   }
     }
+include "includes/last.php";
 include "includes/footer.php";
 ?>
 

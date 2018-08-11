@@ -80,6 +80,7 @@
         
         }
     }
+include "includes/last.php";
 include "includes/footer.php";
 ?>
 

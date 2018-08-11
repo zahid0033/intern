@@ -549,7 +549,9 @@ p{
 /* ************ footer ************** */
 #footer{
     padding-bottom: 3em;
-    background: #f8f8f8;
+    background: #4b584f;
+    margin-top: 15em;
+    padding-top: 2em;
 }
 .blog{
     margin-bottom: 20px
@@ -564,13 +566,20 @@ p{
 .footer h3{
     color: #48af6d;
 }
+.footer p{
+    color: white;
+}
+.footer span{
+    color: white;
+}
 /* **************** last ************** */
 #last{
-    
+    background: #597160;
 }
 .last p{
     opacity: 1;
     text-align: center;
+    color: white;
 }
 .last span{
     color: #42b061;

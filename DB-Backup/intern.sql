@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 07, 2018 at 06:37 PM
+-- Generation Time: Aug 09, 2018 at 05:11 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -21,6 +21,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `intern`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `applicant`
+--
+
+CREATE TABLE `applicant` (
+  `id` int(11) NOT NULL,
+  `cMail` varchar(32) NOT NULL,
+  `jobId` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `applicant`
+--
+
+INSERT INTO `applicant` (`id`, `cMail`, `jobId`) VALUES
+(4, 'zaz@gmail.com', 4),
+(7, 'zaz@gmail.com', 2),
+(8, 'zaz@gmail.com', 1),
+(9, 'zaz@gmail.com', 3),
+(18, 'zaz@gmail.com', 5);
 
 -- --------------------------------------------------------
 
@@ -76,7 +99,8 @@ CREATE TABLE `company` (
 INSERT INTO `company` (`compId`, `empId`, `compName`, `compAddress`, `compWebLink`, `compType`, `compDeleteDate`) VALUES
 (1, 0, 'Agrani Bank', 'Motijheel Dhaka', 'https://www.youtube.com/', 'Business', NULL),
 (2, 0, 'Cloud Software Solution Ltd', 'Banasree Dhaka', 'http://jobs.bdjobs.com/jobsearch.asp?fcatId=5&icatId=', 'startup', NULL),
-(3, 0, 'loud Software Solution Ltd', 'Mirpur 10,Dhaka', 'https://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp', 'Employee', NULL);
+(3, 0, 'loud Software Solution Ltd', 'Mirpur 10,Dhaka', 'https://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp', 'Employee', NULL),
+(4, 1, 'Raven System Ltd ( A Sister Conc', 'mugdapara Dhaka', 'https://github.com/zahid0033/intern', 'Business', NULL);
 
 -- --------------------------------------------------------
 
@@ -116,6 +140,7 @@ INSERT INTO `employer` (`eId`, `eName`, `ePass`, `eCompId`, `eDesignation`, `eMo
 CREATE TABLE `jobpost` (
   `id` int(11) NOT NULL,
   `title` text NOT NULL,
+  `empId` int(11) NOT NULL,
   `companyName` varchar(32) NOT NULL,
   `vacancy` varchar(10) NOT NULL,
   `context` text NOT NULL,
@@ -130,22 +155,29 @@ CREATE TABLE `jobpost` (
   `browseCatg` varchar(32) NOT NULL,
   `postTime` date NOT NULL,
   `expDate` date DEFAULT NULL,
-  `deleteDate` date NOT NULL
+  `deletedAt` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `jobpost`
 --
 
-INSERT INTO `jobpost` (`id`, `title`, `companyName`, `vacancy`, `context`, `description`, `empStatus`, `eduRequirement`, `expRequirement`, `addRequirement`, `jobLocation`, `salary`, `degree`, `browseCatg`, `postTime`, `expDate`, `deleteDate`) VALUES
-(1, 'C# developer needed', 'Agrani Bank', '4', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type ', 'Lorem Ipsum is simply dummy text of the printing an a galley of type a', 'Full time', 'Diploma in Mechatronics, Electronics, Power, Mechanical & Electrical Engineering from any recognized Institution.', 'at least 5 years', '\r\nAge at most 28 years\r\nOnly males are allowed to apply\r\nFresher/2 year\'s relevant job experiences are preferable.\r\n', 'Dhaka', 10000, 'MBBS', 'IT/Telecommunication', '2018-08-06', '2018-08-24', '0000-00-00'),
-(2, 'Web Developer ( PHP , WordPress )', 'Cloud Software Solution Ltd', '3', '\r\n    Convert Dynamic Layout from PSD to HTML5 for WordPress Theme and Plugin Development.\r\n    Have to develop theme short-code in Elementor page builder.\r\n    Have to develop theme feature from design to functionality for WordPress theme\r\n    Have to develop plugin for WordPress\r\n', 'Convert Dynamic Layout from PSD to HTML5 for WordPress Theme and Plugin Development.\r\nHave to develop theme short-code in Elementor page builder. ', 'Half time', '\r\n    Bachelor of Science (BSc) in CSE\r\n    University of Dhaka,Bangladesh University of Engineering and Technology,Shahjalal University of Science & Technology,Military Institute of Science and Technology (MIST),Ahsanullah University of Science and Technology students will get preference\r\n    Skills Required: MySQL,JavaScript,PHP,WordPress,HTML5 & CSS3\r\n', '\r\n    At least 2 year(s)\r\n    The applicants should have experience in the following area(s):\r\n    Web Developer/ Web Designer, UX Designer, HTML & CSS\r\n    Freshers are also encouraged to apply.\r\n', 'NA', 'Dhaka', 40000, 'BSC', 'IT/Telecommunication', '2018-08-06', '2018-08-15', '0000-00-00'),
-(3, 'Senior UX/UI Designer', 'Cloud Software Solution Ltd', '08', 'Have to design PSD web Template - Sample for clear under', 'Have to design PSD web Template - Sample for clear understanding https://dribbble.com/search?q=web+template\r\nHave to design Web Application UI - Sample for clear understanding https://dribbble.com/search?q=Web+Application\r\nHave to design company Brochure & Printing Elements\r\nHave to help others team member to prepare sales presentation and product documentation. ', 'Half time', '\r\n    Bachelor degree in any discipline\r\n    Skills Required: Adobe Photoshop/ Illustrator\r\n', 'At least 3 year(s)\r\nThe applicants should have experience in the following area(s):\r\nGraphic Designer, UX Designer, UI Design', 'Age 25 to 40 years\r\nBoth males and females are allowed to apply\r\nMust be energetic, able to work under pressure and meet deadlines', 'Comilla', 10000, 'Masters', 'NGO/Development', '2018-08-06', '2018-08-21', '0000-00-00'),
-(4, 'Software Engineer (.NET)', 'Raven System Ltd ( A Sister Conc', '4', 'Require 2 years of experienced Full Stack .NET developer with strong knowledge in HTML-5, CSS-3, JavaScript, Bootstrap, jQuery, one of any JavaScript either Angular or React.JS', 'Require 2 years of experienced Full Stack .NET developer with strong knowledge in HTML-5, CSS-3, JavaScript, Bootstrap, jQuery, one of any JavaScript either Angular or React.JS', 'Full time', 'B.Sc in CSE from a reputed university', 'At least 1 year(s)', 'NA', 'Dhaka', 40000, 'Bachelor', 'IT/Telecommunication', '2018-08-08', '2018-08-29', '0000-00-00');
+INSERT INTO `jobpost` (`id`, `title`, `empId`, `companyName`, `vacancy`, `context`, `description`, `empStatus`, `eduRequirement`, `expRequirement`, `addRequirement`, `jobLocation`, `salary`, `degree`, `browseCatg`, `postTime`, `expDate`, `deletedAt`) VALUES
+(1, 'C# developer needed', 1, 'Agrani Bank', '4', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type ', 'Lorem Ipsum is simply dummy text of the printing an a galley of type a', 'Full time', 'Diploma in Mechatronics, Electronics, Power, Mechanical & Electrical Engineering from any recognized Institution.', 'at least 5 years', '\r\nAge at most 28 years\r\nOnly males are allowed to apply\r\nFresher/2 year\'s relevant job experiences are preferable.\r\n', 'Dhaka', 10000, 'MBBS', 'IT/Telecommunication', '2018-08-06', '2018-08-24', NULL),
+(2, 'Web Developer ( PHP , WordPress )', 1, 'Cloud Software Solution Ltd', '3', '\r\n    Convert Dynamic Layout from PSD to HTML5 for WordPress Theme and Plugin Development.\r\n    Have to develop theme short-code in Elementor page builder.\r\n    Have to develop theme feature from design to functionality for WordPress theme\r\n    Have to develop plugin for WordPress\r\n', 'Convert Dynamic Layout from PSD to HTML5 for WordPress Theme and Plugin Development.\r\nHave to develop theme short-code in Elementor page builder. ', 'Half time', '\r\n    Bachelor of Science (BSc) in CSE\r\n    University of Dhaka,Bangladesh University of Engineering and Technology,Shahjalal University of Science & Technology,Military Institute of Science and Technology (MIST),Ahsanullah University of Science and Technology students will get preference\r\n    Skills Required: MySQL,JavaScript,PHP,WordPress,HTML5 & CSS3\r\n', '\r\n    At least 2 year(s)\r\n    The applicants should have experience in the following area(s):\r\n    Web Developer/ Web Designer, UX Designer, HTML & CSS\r\n    Freshers are also encouraged to apply.\r\n', 'NA', 'Dhaka', 40000, 'BSC', 'IT/Telecommunication', '2018-08-06', '2018-08-15', NULL),
+(3, 'Senior UX/UI Designer', 1, 'Cloud Software Solution Ltd', '08', 'Have to design PSD web Template - Sample for clear under', 'Have to design PSD web Template - Sample for clear understanding https://dribbble.com/search?q=web+template\r\nHave to design Web Application UI - Sample for clear understanding https://dribbble.com/search?q=Web+Application\r\nHave to design company Brochure & Printing Elements\r\nHave to help others team member to prepare sales presentation and product documentation. ', 'Half time', '\r\n    Bachelor degree in any discipline\r\n    Skills Required: Adobe Photoshop/ Illustrator\r\n', 'At least 3 year(s)\r\nThe applicants should have experience in the following area(s):\r\nGraphic Designer, UX Designer, UI Design', 'Age 25 to 40 years\r\nBoth males and females are allowed to apply\r\nMust be energetic, able to work under pressure and meet deadlines', 'Comilla', 10000, 'Masters', 'NGO/Development', '2018-08-06', '2018-08-21', NULL),
+(4, 'Software Engineer (.NET)', 4, 'Raven System Ltd ( A Sister Conc', '4', 'Require 2 years of experienced Full Stack .NET developer with strong knowledge in HTML-5, CSS-3, JavaScript, Bootstrap, jQuery, one of any JavaScript either Angular or React.JS', 'Require 2 years of experienced Full Stack .NET developer with strong knowledge in HTML-5, CSS-3, JavaScript, Bootstrap, jQuery, one of any JavaScript either Angular or React.JS', 'Full time', 'B.Sc in CSE from a reputed university', 'At least 1 year(s)', 'NA', 'Dhaka', 40000, 'Bachelor', 'IT/Telecommunication', '2018-08-08', '2018-08-29', NULL),
+(5, 'NGO Worker needed', 1, 'loud Software Solution Ltd', '5', 'Require 2 years of experienced Full Stack .NET developer with strong knowledge in HTML-5, CSS-3, JavaScript, Bootstrap, jQuery, one of any JavaScript either Angular or React.JS', 'Require 2 years of experienced Full Stack .NET developer with strong knowledge in HTML-5, CSS-3, JavaScript, Bootstrap, jQuery, one of any JavaScript either Angular or React.JS', 'Half time', 'B.Sc in CSE from a reputed university', 'At least 1 year(s)', 'NA', 'Comilla', 20000, 'BSC in CSE', 'NGO/Development', '2018-08-09', '2018-08-30', NULL);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `applicant`
+--
+ALTER TABLE `applicant`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `candidate`
@@ -178,6 +210,12 @@ ALTER TABLE `jobpost`
 --
 
 --
+-- AUTO_INCREMENT for table `applicant`
+--
+ALTER TABLE `applicant`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
 -- AUTO_INCREMENT for table `candidate`
 --
 ALTER TABLE `candidate`
@@ -187,7 +225,7 @@ ALTER TABLE `candidate`
 -- AUTO_INCREMENT for table `company`
 --
 ALTER TABLE `company`
-  MODIFY `compId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `compId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `employer`
@@ -199,7 +237,7 @@ ALTER TABLE `employer`
 -- AUTO_INCREMENT for table `jobpost`
 --
 ALTER TABLE `jobpost`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables

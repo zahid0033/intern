@@ -14,7 +14,7 @@ include "includes/navbar.php";
         <th>News ID</th>
         <th>Title</th>
         <th>Vacancy</th>
-        <th>Posting Date and Time</th>
+        <th>Posting Date</th>
         <th>Action</th>
 		</tr>
 
@@ -66,4 +66,5 @@ include "includes/navbar.php";
 </table>
 </div>
 
+<?php include "includes/last.php" ?>
 <?php include "includes/footer.php" ?>

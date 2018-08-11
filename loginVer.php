@@ -13,7 +13,9 @@ if(isset($_POST['save'])){
 
             if (mysqli_num_rows($result) == 1)
             {
+                mysqli_query($conn,"update employer set eLogin=now() WHERE eMail='$_SESSION[en]'");
             	$_SESSION['en']= $cMail;
+                
             	header("location:index.php");
                
     		}
@@ -34,6 +36,7 @@ else if(isset($_POST['submit'])){
             if (mysqli_num_rows($result) == 1)
             {
             	$_SESSION['un']= $cMail;
+                mysqli_query($conn,"update candidate set cLogin=now() WHERE cMail='$_SESSION[un]'");
             	header("location:index.php");
                
     		}

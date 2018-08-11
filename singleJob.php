@@ -124,4 +124,5 @@
         
 </div>
    
+    <?php include "includes/last.php" ?>
     <?php include "includes/footer.php" ?>
