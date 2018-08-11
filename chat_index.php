@@ -26,7 +26,6 @@ include "includes/navbar.php";
             update_last_activity();
         },5000);
         
-       fetch_user();
         
        function fetch_user(){
            $.ajax({
