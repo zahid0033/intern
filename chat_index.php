@@ -10,7 +10,9 @@ include "includes/navbar.php";
 ?>
 <div class="container">
     <div id="user_details"> </div>
-    <div id="user_model_details"> </div>
+    <div id="user_model_details"><p>hi</p> </div>
+    <div id="modal"><p>hello</p></div>
+    <!--<div id="user_model_details"> </div>-->
 </div>
 
 
@@ -47,7 +49,7 @@ include "includes/navbar.php";
        }
     
         function make_chat_dialog_box(to_user_id,to_user_name){
-            var modal_content = '<div id="user_dialog_'+to_user_id+'" class="user_dialog" title="You have chat with'+to_user_name+'">';
+            var modal_content = '<div  id="user_dialog_'+to_user_id+'" class="user_dialog" title="You have chat with'+to_user_name+'">';
             
             modal_content += '<div style="height:400px;border:1px solid #ccc; overflow-y:scroll; margin-bottom: 24px; padding:16px;" class="chat_history" data-touserid="'+to_user_id+'" id="chat_history_'+to_user_id+'">';
             
@@ -64,11 +66,11 @@ include "includes/navbar.php";
             var to_user_id = $(this).data('touserid');
             var to_user_name = $(this).data('tousername');
             make_chat_dialog_box(to_user_id,to_user_name);
-            $("#user_dialog_"+to_user_id).dialog({
-                autoOpen:false,
-                width:200
-            });
-            $('#user_dialog_'+to_user_id).dialog('open');
+            
+            
+            
+            
+            $('#user_model_details').dialog();
             
         });
         

@@ -11,7 +11,7 @@ session_start();
     $statement = "INSERT INTO applicant (cMail, jobId)VALUES ('$cMail', '$id')";
     $result = mysqli_query($conn,$statement);
 
-    header('Location:../index.php');
+    header('Location:../appliedJobs.php');
 
 
 

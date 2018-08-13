@@ -16,28 +16,33 @@ $output_result ='<div class="jobPost">';
                     
                     $query = "";
 
-                    if(empty(isset($_GET["location"])) && isset($_GET["category"])){
-                        $category = $_GET['category'];
-                        $query = "select * from jobpost where browseCatg = '$category' AND deletedAt is null order by id desc ";
-                        echo "4";
-                    }
-                   else if(isset($_GET["location"]) and isset($_GET["category"]) ){
-                        $category = $_GET['category'];
-                        $query = "select * from jobpost where browseCatg = '$category' AND deletedAt is null order by id desc ";
-                        echo "3";
-                    }
+                if(isset($_GET['location']) && isset($_GET['category']))
+                     {
+                            if(strcmp($_GET['location'],"")==0 && strcmp($_GET['category'],"")!=0) {
+                                $category = $_GET['category'];
+                                   $query = "select * from jobpost where browseCatg = '$category' AND deletedAt is null order by id desc ";
+
+                                echo "2";
+                            }
+                            else if(strcmp($_GET['location'],"")!=0 && strcmp($_GET['category'],"")==0){
+                                $location= $_GET['location'];
+                                 $query = "select * from jobpost where jobLocation = '$location' AND deletedAt is null order by id desc ";
+                                echo "1";
+                            }
+                           else if(strcmp($_GET['location'],"")!=0 && strcmp($_GET['category'],"")!=0){
+                                $category = $_GET['category'];
+                                $location= $_GET['location'];
+                                 $query = "select * from jobpost where jobLocation = '$location' AND deletedAt is null order by id desc ";
+                                $query = "select * from jobpost where browseCatg = '$category' AND deletedAt is null order by id desc ";
+                                echo "4";
+                            }
+                          else if(strcmp($_GET['location'],"")==0 && strcmp($_GET['location'],"")==0){
+                              $query = "select * from jobpost where deletedAt is null order by id desc ";
+                              echo "5";
+                          }
+
                     
-//                    else if(isset($_GET['location'])){
-//                        $location = $_GET['location']; 
-//                        
-//                        $query = "select * from jobpost where jobLocation = '$location' AND deletedAt is null order by id desc ";
-//                        echo "2";
-//                    }
-//                    else if(isset($_GET['category'])){
-//                        $category = $_GET['category'];
-//                        $query = "select * from jobpost where browseCatg = '$category' AND deletedAt is null order by id desc ";
-//                        echo "1";
-//                    }
+                       }
                     
 
 
@@ -72,7 +77,7 @@ $output_result ='<div class="jobPost">';
                             
                             
                             
-       $output_result .=  '<div class="col-sm-12">
+       $output_result .=  '<div class="col-sm-4">
                             <div class="panel-group">
                                <div class="panel panel-info">
                                    <div class="panel-heading">

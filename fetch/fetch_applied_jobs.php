@@ -33,13 +33,13 @@ $output_result =
     if(mysqli_num_rows($result)>0){
         while($row = mysqli_fetch_assoc($result)){
             
-            $status = '';
+        $status = '';
         $current_timestamp= strtotime(date('Y-m-d H:i:s') . '-10 sec');
         $current_timestamp = date('Y-m-d H:i:s' , $current_timestamp);
             
             $jobId = $row['jobId'];
             
-            $query = "select * from jobpost where id = '$jobId' ";
+            $query = "select * from jobpost where id = '$jobId' and deletedAT is null ";
             $output = mysqli_query($conn,$query);
             
             if(mysqli_num_rows($output) > 0){
@@ -87,8 +87,8 @@ $output_result =
                              <td>'.$compName.'</td>
                              <td>'.$empStatus.'</td>
                              <td>'.$vacancy.'</td>
-                             <td>'.$status.'</td>
-                             <td><a href=\"../empPostDelete.php?id='.$jobId.'\" onClick=\"return confirm("Are you sure you want to delete?")\">Cancel</a> | <a href="../intern/singleJob.php?id='.$jobId.'">View Job</a></td>
+                             <td>'.$status.'</td>                             
+                             <td><a href="../intern/candidate/cancel_applyJob.php?id='.$jobId.'&cMail='.$cMail.'" onClick=\"return confirm("Are you sure you want to delete?")\">Cancel</a> | <a href="../intern/singleJob.php?id='.$jobId.'">View Job</a></td>
                              </tr>';
                             
                               }
