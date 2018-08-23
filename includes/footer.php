@@ -59,6 +59,39 @@
             , speed: 4000
         });
     </script>
+    
+<script>
+    $(document).ready(function(){
+        
+        setInterval(function(){
+           
+            update_last_activity();
+            current_time();
+            
+        },500);
+        
+       function update_last_activity(){
+           $.ajax({
+               url: "chat_update_last_activity.php",
+               success:function(){
+                   
+               }
+           })
+       }
+        function current_time(){
+            $.ajax({
+                url: "includes/current_time.php",
+                success: function(){
+                    
+                }
+            })
+        }
+    
+       
+        
+        
+    });
+</script>
 </body>
 
 </html>

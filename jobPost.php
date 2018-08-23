@@ -11,13 +11,24 @@ $category = "";
 if(isset($_GET['location'])){
     $location = $_GET['location'];
 }
-else if(isset($_GET['category'])){
+if(isset($_GET['category'])){
     $category = $_GET['category'];
 }
 ?>
 
    
-               
+        <div class="top_banner">
+           
+           <div class="col-sm-6 top_banner_left">
+               <h2>Current Job Posts</h2>
+               <p>Currently you have applied to this jobs . and they are still on pending.</p>
+               <p>They are neither approved nor unapproved</p>
+           </div>
+           <div class="col-sm-6"></div>
+           
+           
+       </div>
+         
         <div id="job_post" class="container">
        
            <h2 style="text-align:center;">Job Posts</h2>
@@ -43,7 +54,7 @@ else if(isset($_GET['category'])){
             
            // var locations = "";
             var locations = "<?php echo $location ?>";
-            var categorys = "<?php echo $category?>";
+            var categorys = "<?php echo $category ?>";
             
            $.ajax({
                type:"GET",

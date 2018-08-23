@@ -32,8 +32,7 @@ $output_result ='<div class="jobPost">';
                            else if(strcmp($_GET['location'],"")!=0 && strcmp($_GET['category'],"")!=0){
                                 $category = $_GET['category'];
                                 $location= $_GET['location'];
-                                 $query = "select * from jobpost where jobLocation = '$location' AND deletedAt is null order by id desc ";
-                                $query = "select * from jobpost where browseCatg = '$category' AND deletedAt is null order by id desc ";
+                                 $query = "select * from jobpost where jobLocation = '$location' AND browseCatg = '$category' AND deletedAt is null order by id desc ";
                                 echo "4";
                             }
                           else if(strcmp($_GET['location'],"")==0 && strcmp($_GET['location'],"")==0){
@@ -77,7 +76,7 @@ $output_result ='<div class="jobPost">';
                             
                             
                             
-       $output_result .=  '<div class="col-sm-4">
+       $output_result .=  '<div class="col-sm-12">
                             <div class="panel-group">
                                <div class="panel panel-info">
                                    <div class="panel-heading">
@@ -98,7 +97,7 @@ $output_result ='<div class="jobPost">';
                                         <p class = "jobpost"><i class="fa fa-line-chart" aria-hidden="true"></i><b>Experience Required : </b>'.$expRequirement.'</p>
                                         
                                         
-                                        <p class = "jobpost"><i class="fa fa-clock-o" aria-hidden="true"></i><b>Deadline : </b>'.$daydiff.' Days left</p>
+                                        <p class = "jobpost" style="color:blue;"><i class="fa fa-clock-o" aria-hidden="true"></i><b>Deadline : </b>'.$daydiff.' Days left</p>
 
 
                                     </div>

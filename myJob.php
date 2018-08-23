@@ -7,9 +7,20 @@ include "includes/header.php";
 include "includes/head.php";
 include "includes/navbar.php";
 ?>
+
+<div class="top_banner">
+           
+           <div class="col-sm-6 top_banner_left">
+               <h2>My Job Posts</h2>
+               <p>Currently you have applied to this jobs . and they are still on pending.</p>
+               <p>They are neither approved nor unapproved</p>
+           </div>
+           <div class="col-sm-6"></div>
+           
+           
+</div>
 <div class="container">
 
-<h2 style="text-align:center;margin-bottom:1em;">My Job Posts</h2>
 
 <table class="table table-striped table-bordered table-condensed">
 		<tr>

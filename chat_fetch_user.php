@@ -30,6 +30,12 @@ if(mysqli_num_rows($result) > 0){
             if(mysqli_num_rows($sub_result)>0){
                 while($sub_row = mysqli_fetch_assoc($sub_result) ){
                     
+                    $user_id = $row['cId'];
+                    $user_name = $row['cName'];
+                    $_SESSION['user_id'] = $user_id;
+                    $_SESSION['user_name'] = $user_name;
+                    
+                    
                    $user_last_activity = $row['cLastActivity'];
                     
                                     

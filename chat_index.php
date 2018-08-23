@@ -12,7 +12,7 @@ include "includes/navbar.php";
     <div id="user_details"> </div>
     <div id="user_model_details"><p>hi</p> </div>
     <div id="modal"><p>hello</p></div>
-    <!--<div id="user_model_details"> </div>-->
+<!--    <div id="user_model_details"> </div>-->
 </div>
 
 
@@ -66,11 +66,25 @@ include "includes/navbar.php";
             var to_user_id = $(this).data('touserid');
             var to_user_name = $(this).data('tousername');
             make_chat_dialog_box(to_user_id,to_user_name);
-            
-            
-            
+             
             
             $('#user_model_details').dialog();
+            
+        });
+        
+        $(document).on('click','.send_chat',function(){
+           var to_user_id = $(this).attr('id');
+            var chat_message = $('#chat_message'+to_user_id).val();
+            
+            $.ajax({
+                url:"insert_chat.php",
+                method: "POST",
+                data: {to_user_id:to_user_id,chat_message:chat_message},
+                success:function(data){
+                    $('#chat_message'+to_user_id).val('');
+                    $('#chat_history'+to_user_id).html(data);
+                }
+            })
             
         });
         

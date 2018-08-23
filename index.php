@@ -5,9 +5,13 @@ created by
 * Date :27-july-18
 */
 session_start();
+require "config.php";
 
 include "includes/header.php";
 
+$category = array("Accounting/Finance","NGO/Development","Commercial/Supply Chain","Education/Training","Engineer/Architects","Garments/Textile","HR/Org. Development","Gen Mgt/Admin","Design/Creative","Production/Operation","Hospitality/ Travel/ Tourism","Beauty Care/ Health & Fitness","Electrician/ Construction/ Repair","IT/Telecommunication","Marketing/Sales","Customer Support/Call Centre","Media/Ad./Event Mgt","Medical/Pharma");
+
+$location = array("Dhaka","Chittagong","Rajshahi","Rangpur","Barishal","Khulna","Comilla","Sylhet");
 
 ?>
 
@@ -56,6 +60,48 @@ include "includes/header.php";
                       <h5>This is one of the largest site for searching interns all over the country</h5>
                       
                       <p>Age 25 to 40 years Both males and females are allowed to apply Must be energetic, able to work under pressure and meet deadlines</p>
+                      
+                      <div class="col-sm-12 catg_search">
+                      
+                              <form action="includes/search.php" method="post">
+
+                                        <div class="form-group col-sm-6 ">
+                                                <label class="col-sm-3 col-form-label">Category</label>
+                                                <div class="col-sm-9">
+                                                    <select name="category" id="country" class="btn  col-sm-12">
+                                                        <option value=" ">- select category-</option>
+                                                        <?php
+                                                            foreach($category as $catg){
+                                                                echo '<option value="'.$catg.'">'.$catg.'</option>';
+                                                            }
+                                                        ?>
+                                                        
+                                                    </select>
+                                                </div>
+                                        </div>
+
+                                        <div class="form-group col-sm-5">
+                                                <label class="col-sm-3 col-form-label">Location</label>
+                                                <div class="col-sm-9">
+                                                    <select name="location" id="country" class="btn  col-sm-12">
+                                                        <option value=" ">- select location-</option>
+                                                        <?php
+                                                            foreach($location as $locate){
+                                                                echo '<option value="'.$locate.'">'.$locate.'</option>';
+                                                            }
+                                                        ?>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <input class="btn btn-success" style="float:right;border:1px solid white" type="submit" name="submit" value="search">
+                                        </div>
+
+                                        
+
+
+                             </form>
+                     </div>
                       
                       
                       
@@ -170,38 +216,42 @@ include "includes/header.php";
     </section>
     
     <!-- ************ search job ************ -->
-    <section id="search">
+    <section id="search" class="search">
         <div class="container col-sm-12">
             <p>have you any thing ? </p>
-            <form action="search.php">
+            <form action="includes/search.php" method="post">
                
-                <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">industry type <span class="error">*</span></label>
+                <div class="form-group col-sm-7 ">
+                        <label class="col-sm-3 col-form-label">Category type <span class="error">*</span></label>
                         <div class="col-sm-9">
-                            <select name="fathrNatnlity" id="country" class="btn  col-sm-12">
-                                <option value=" ">- select -</option>
-                                <option value="Bangladesh ">Bangladesh</option>
-                                <option value="India ">India</option>
-                                <option value="Pakistan ">Pakistan</option>
+                            <select name="category" id="country" class="btn  col-sm-12">
+                                 <option value=" ">- select category-</option>
+                                                        <?php
+                                                            foreach($category as $catg){
+                                                                echo '<option value="'.$catg.'">'.$catg.'</option>';
+                                                            }
+                                                        ?>
                             </select>
                             <span class="error_box"></span>
                         </div>
                 </div>
                 
-                <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">industry type <span class="error">*</span></label>
+                <div class="form-group col-sm-5">
+                        <label class="col-sm-3 col-form-label">Location type <span class="error">*</span></label>
                         <div class="col-sm-9">
-                            <select name="fathrNatnlity" id="country" class="btn  col-sm-12">
-                                <option value=" ">- select -</option>
-                                <option value="Bangladesh ">Bangladesh</option>
-                                <option value="India ">India</option>
-                                <option value="Pakistan ">Pakistan</option>
+                            <select name="location" id="country" class="btn  col-sm-12">
+                                <option value=" ">- select location-</option>
+                                                        <?php
+                                                            foreach($location as $locate){
+                                                                echo '<option value="'.$locate.'">'.$locate.'</option>';
+                                                            }
+                                                        ?>
                             </select>
                             <span class="error_box"></span>
                         </div>
                 </div>
                 
-                <input type="submit" name="submit" value="search">
+                <input style="float:right" type="submit" name="submit" value="search">
                 
                 
             </form>
@@ -588,38 +638,7 @@ include "includes/header.php";
     
 
     
-    <script>
-    $(document).ready(function(){
-        
-        setInterval(function(){
-           
-            update_last_activity();
-            current_time();
-            
-        },500);
-        
-       function update_last_activity(){
-           $.ajax({
-               url: "chat_update_last_activity.php",
-               success:function(){
-                   
-               }
-           })
-       }
-        function current_time(){
-            $.ajax({
-                url: "includes/current_time.php",
-                success: function(){
-                    
-                }
-            })
-        }
-    
-       
-        
-        
-    });
-</script>
+  
     
     
     

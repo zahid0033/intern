@@ -1,6 +1,6 @@
  <?php
                         
-    require 'config.php';
+    //require 'config.php';
     $query1 = "select * from jobpost where jobLocation = 'Dhaka' AND deletedAt is null order by id desc ";
     $query2 = "select * from jobpost where jobLocation = 'Chittagong' AND deletedAt is null order by id desc";
     $query3 = "select * from jobpost where jobLocation = 'Rajshahi' AND deletedAt is null order by id desc";

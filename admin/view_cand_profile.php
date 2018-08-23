@@ -2,10 +2,9 @@
     session_start();
 
     
-    require "config.php";
-    include "includes/header.php";
-    include "includes/head.php";
-    include "includes/navbar.php";
+require "../config.php";
+include "includes/admin_navigation.php";
+include "includes/admin_header.php";
 
 
     $cMail = $_GET['user'];
@@ -24,23 +23,12 @@
             $cMobile = $row['cMobile'];
             $cGender = $row['cGender'];
             $cSkill = $row['cSkill'];
-            $cDegree = $row['cDegree']; ?>
-            
-<div class="top_banner">
-           
-           <div class="col-sm-6 top_banner_left">
-               <h2>My Profile</h2>
-               <p>Currently you have applied to this jobs . and they are still on pending.</p>
-               <p>They are neither approved nor unapproved</p>
-           </div>
-           <div class="col-sm-6"></div>
-           
-           
-</div>            
+            $cDegree = $row['cDegree']; 
+?>
             
             
-            <div class="container">
-                
+            <div id="page-wrapper" class="container">
+               <h2 style="text-align:center;" >Profile</h2>
                
                
                <?php
@@ -77,8 +65,7 @@
             
      <?php   }
     }
-include "includes/last.php";
-include "includes/footer.php";
+include "includes/admin_footer.php";
 ?>
 
     

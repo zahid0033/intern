@@ -43,7 +43,7 @@
                                           <div class="dropdown-content">
                                             <a href="loginCandidate.php">Candidate</a>
                                             <a href="loginEmployee.php">Employee</a>
-                                            <a href="../Intern/cms/admin/index.php">Admin</a>
+                                            <a href="../Intern/admin/index.php">Admin</a>
                                           </div>
                                         </div>
                                         <spqn style="margin-right:5px;"> / </spqn>

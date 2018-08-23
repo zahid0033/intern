@@ -9,7 +9,24 @@ include "includes/head.php";
 include "includes/navbar.php";
 ?>
 
-<div id="applied_jobs" class="container"></div>
+
+
+   
+       <div class="top_banner">
+           
+           <div class="col-sm-6 top_banner_left">
+               <h2>My Applied Jobs</h2>
+               <p>Currently you have applied to this jobs . and they are still on pending.</p>
+               <p>They are neither approved nor unapproved</p>
+           </div>
+           <div class="col-sm-6"></div>
+           
+           
+       </div>
+<div class="container">
+    
+    <div id="applied_jobs"></div>
+</div>
 
 
 <script>
@@ -20,6 +37,8 @@ include "includes/navbar.php";
         
         setInterval(function(){
             fetch_applied_jobs();
+            update_last_activity();
+            current_time();
         },5000);
         
         
@@ -32,6 +51,23 @@ include "includes/navbar.php";
                }
            })
        } 
+        
+        function update_last_activity(){
+           $.ajax({
+               url: "chat_update_last_activity.php",
+               success:function(){
+                   
+               }
+           })
+       }
+        function current_time(){
+            $.ajax({
+                url: "includes/current_time.php",
+                success: function(){
+                    
+                }
+            })
+        }
         
     });
 </script>

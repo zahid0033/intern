@@ -7,10 +7,21 @@ include "includes/navbar.php";
 
 
     <!-- ****************** our contact us *************** -->
+    <div class="top_banner">
+           
+           <div class="col-sm-6 top_banner_left">
+               <h2>Contact Us</h2>
+               <p>Currently you have applied to this jobs . and they are still on pending.</p>
+               <p>They are neither approved nor unapproved</p>
+           </div>
+           <div class="col-sm-6"></div>
+           
+           
+       </div>
     <section id="contact_us">
         <div class="container">
             <div class="heading">
-                <h2>our contact us</h2>
+                
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
             </div>
             <div class="adress">

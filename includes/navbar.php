@@ -18,11 +18,28 @@
                             echo '<li><a href="index.php">Home</a></li>
                                   <li><a href="about.php">About us</a></li>
                                   <li><a href="appliedJobs.php">Applied Jobs <span style="color: #fbf5f5;border: 2px solid green;border-radius: 100%;font-size: 15px;background: green;padding: 0px 4px 0px 4px;font-weight: 800;">'.$_SESSION['applied_job'].'</span></a></li>   <li><a href="jobPost.php">Job Posts</a></li>
-                                  <li><a href="contact.php">Contact us</a></li>';
-                            echo "<li><a href=\"logoutVer.php\">Logout</a></li>";
+                                  <li><a href="contact.php">Contact us</a></li>
+                                  <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> '.$un.' <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="candProfile.php?user='.$un.'"><i class="fa fa-fw fa-user"></i> Profile</a>
+                                        </li>
+
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="logoutVer.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                                        </li>
+                                    </ul>
+                                </li>';
                            
-                            echo "<li><a href='candProfile.php?user=".$un."' style='float:right;'>"."<span class='label label-info'>".$un."</span></a></li>";
+                           
+                           // echo "<li><a href=\"logoutVer.php\">Logout</a></li>";
+                           
+//                  echo "<li><a href='candProfile.php?user=".$un."' style='float:right;'>"."<span class='label label-info'>".$un."</span></a></li>";
                        }
+                        
+                        
                         else if(isset($_SESSION['en'])){
                             $en= $_SESSION['en'];
                             echo '<li><a href="index.php">Home</a></li>
@@ -30,9 +47,22 @@
                                   <li><a href="candidates.php">Candidates <span style="color: #fbf5f5;border: 2px solid green;border-radius: 100%;font-size: 15px;background: green;padding: 0px 4px 0px 4px;font-weight: 800;">'.$_SESSION["candidate_count"].'</span></a></li>
                                   <li><a href="myjob.php">My job posts</a></li>
                                   <li><a href="jobPost.php">Job Posts</a></li>
-                                  <li><a href="contact.php">Contact us</a></li>';
-                            echo "<li><a href=\"logoutVer.php\">Logout</a></li>";
-                            echo "<li><a href='empProfile.php?user=".$en."' style='float:right;'>"."<span class='label label-info'>".$en."</span></a></li>";
+                                  <li><a href="contact.php">Contact us</a></li>
+                                  <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> '.$en.' <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="empProfile.php?user='.$en.'"><i class="fa fa-fw fa-user"></i> Profile</a>
+                                        </li>
+
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="logoutVer.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                                        </li>
+                                    </ul>
+                                </li>';
+                    //    echo "<li><a href=\"logoutVer.php\">Logout</a></li>";
+                    //    echo "<li><a href='empProfile.php?user=".$en."' style='float:right;'>"."<span class='label label-info'>".$en."</span></a></li>";
                        }
                         
                         else{
