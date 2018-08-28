@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 23, 2018 at 06:26 AM
+-- Generation Time: Aug 28, 2018 at 02:55 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -43,7 +43,11 @@ INSERT INTO `applicant` (`id`, `cMail`, `jobId`) VALUES
 (53, 'zai@gmail.com', 4),
 (59, 'zay@gmail.com', 4),
 (60, 'zaz@gmail.com', 5),
-(61, 'zaf@gmail.com', 1);
+(61, 'zaf@gmail.com', 1),
+(62, 'zai@gmail.com', 5),
+(63, 'zai@gmail.com', 3),
+(64, 'zaz@gmail.com', 4),
+(65, 'zaz@gmail.com', 2);
 
 -- --------------------------------------------------------
 
@@ -55,9 +59,11 @@ CREATE TABLE `candidate` (
   `cMail` varchar(100) CHARACTER SET utf32 NOT NULL,
   `cPass` text CHARACTER SET utf32 NOT NULL,
   `cName` varchar(32) CHARACTER SET utf32 NOT NULL,
+  `cImage` varchar(200) NOT NULL,
   `cGender` text CHARACTER SET utf32 NOT NULL,
-  `cMobile` int(11) NOT NULL,
+  `cMobile` varchar(200) DEFAULT NULL,
   `cSkill` text CHARACTER SET utf32,
+  `cPreviousExp` text NOT NULL,
   `cLogin` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `cLogout` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `cLastActivity` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -65,7 +71,7 @@ CREATE TABLE `candidate` (
   `cDegree` varchar(32) NOT NULL,
   `cPresentAdd` text NOT NULL,
   `cPermanentAdd` text NOT NULL,
-  `cDob` time NOT NULL,
+  `cDob` varchar(32) NOT NULL,
   `cDeleteDate` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -73,12 +79,12 @@ CREATE TABLE `candidate` (
 -- Dumping data for table `candidate`
 --
 
-INSERT INTO `candidate` (`cMail`, `cPass`, `cName`, `cGender`, `cMobile`, `cSkill`, `cLogin`, `cLogout`, `cLastActivity`, `cId`, `cDegree`, `cPresentAdd`, `cPermanentAdd`, `cDob`, `cDeleteDate`) VALUES
-('asieb.hasan.supto@gmail.com', '慳????????', '?????????', '????', 0, '????????', '2018-08-19 18:42:35', '2018-08-15 18:00:00', '0000-00-00 00:00:00', 1, '', '', '', '00:00:00', NULL),
-('zaz@gmail.com', '321', 'qwe', 'male', 1521434247, 'java', '2018-08-22 20:28:57', '2018-08-22 20:28:57', '2018-08-22 20:28:56', 2, '', '', '', '00:00:00', NULL),
-('zaf@gmail.com', '321', 'shakil', 'male', 1521434247, 'java.php', '2018-08-22 20:27:50', '2018-08-22 20:27:50', '2018-08-22 20:27:50', 3, 'BSC in CSE', 'banasree dhaka', 'comilla adda bazar', '18:12:12', NULL),
-('zay@gmail.com', '321', 'qwe', 'male', 1521434247, 'laravel,php', '2018-08-19 18:42:35', '2018-08-13 16:18:19', '2018-08-13 16:18:19', 4, 'java', 'banasree rampura dhaka', 'ksjdjks sdsjds sjdksjd', '19:09:09', NULL),
-('zai@gmail.com', '321', 'shakib', 'male', 1521434247, 'java', '2018-08-22 20:20:50', '2018-08-22 20:20:50', '2018-08-22 20:20:50', 5, 'PHD', 'banasree dhaka', 'banasree dhakabanasree dhakabanasree dhaka', '22:17:16', NULL);
+INSERT INTO `candidate` (`cMail`, `cPass`, `cName`, `cImage`, `cGender`, `cMobile`, `cSkill`, `cPreviousExp`, `cLogin`, `cLogout`, `cLastActivity`, `cId`, `cDegree`, `cPresentAdd`, `cPermanentAdd`, `cDob`, `cDeleteDate`) VALUES
+('asieb.hasan.supto@gmail.com', '慳????????', '?????????', '', '????', '0', '????????', '', '2018-08-26 04:50:35', '2018-08-15 18:00:00', '0000-00-00 00:00:00', 1, '', '', '', '00:00:00', '2018-08-26 04:50:35'),
+('zaz@gmail.com', '321', 'Zahid', 'bookss.jpg', 'male', '01521434247', 'Laravel,PHP', 'Worked as a web developer', '2018-08-26 18:50:09', '2018-08-26 18:30:29', '2018-08-26 18:50:09', 2, 'B.S.C in CSE', 'Bansree,Rampura Dhaka', 'Comilla ', '30/06/1997', NULL),
+('zaf@gmail.com', '321', 'shakil', 'foot.jpg', 'male', '1521434247', '', '', '2018-08-26 17:53:06', '2018-08-26 17:53:06', '2018-08-26 17:53:06', 3, 'BSC in CSE', 'banasree dhaka', 'comilla adda bazar', '18:12:12', NULL),
+('zay@gmail.com', '321', 'shakil', 'foot.jpg', 'male', '01521434247', 'laravel,php', 'Worked in GrameenPhone', '2018-08-25 17:58:32', '2018-08-25 17:58:32', '2018-08-25 17:58:31', 4, 'java', 'banasree rampura dhaka', 'ksjdjks sdsjds sjdksjd', '23/05/1995', NULL),
+('zai@gmail.com', '321', 'shakib', 'foot.jpg', 'male', '0152143424', 'java,php', 'Worked in an IT firm', '2018-08-26 04:26:23', '2018-08-26 04:26:23', '2018-08-26 04:26:23', 5, 'BSC', 'banasree dhaka', 'Comilla banasree dhaka', '23/05/1995', NULL);
 
 -- --------------------------------------------------------
 
@@ -116,7 +122,7 @@ CREATE TABLE `company` (
 
 INSERT INTO `company` (`compId`, `empId`, `compName`, `compAddress`, `compWebLink`, `compType`, `compDeleteDate`) VALUES
 (1, 0, 'Agrani Bank', 'Motijheel Dhaka', 'https://www.youtube.com/', 'Business', NULL),
-(2, 0, 'Cloud Software Solution Ltd', 'Banasree Dhaka', 'http://jobs.bdjobs.com/jobsearch.asp?fcatId=5&icatId=', 'startup', NULL),
+(2, 0, 'Cloud Software Solution Ltd', 'Banasree Dhaka', 'https://www.youtube.com/watch?v=mDotS5BDqRM', 'startup', NULL),
 (3, 0, 'loud Software Solution Ltd', 'Mirpur 10,Dhaka', 'https://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp', 'Employee', NULL),
 (4, 1, 'Raven System Ltd ( A Sister Conc', 'mugdapara Dhaka', 'https://github.com/zahid0033/intern', 'Business', NULL);
 
@@ -148,8 +154,8 @@ CREATE TABLE `employer` (
 --
 
 INSERT INTO `employer` (`eId`, `eName`, `ePass`, `eCompId`, `eDesignation`, `eMobile`, `eMail`, `ePosition`, `eDescription`, `eDob`, `eDeleteDate`, `eLogin`, `eLogout`, `eLastActivity`) VALUES
-(1, 'hasib', '321', 1, 'CEO', 125454545, 'zaz@yahoo.com', 'ceo', 'dfdf d dfdf', '0000-00-00', NULL, '0000-00-00', '2018-08-23', '2018-08-22 20:32:00'),
-(2, 'shakil', '321', 2, 'manager', 1521121212, 'yay@gmail.com', 'manager', 'ksdkjs sdnksj ndsj', '2017-08-14', NULL, '0000-00-00', '2018-08-11', '2018-08-19 17:36:32');
+(1, 'Hasib', '321', 1, 'CEO', 125454545, 'zaz@yahoo.com', 'manager', 'dfdf d dfdf', '0000-00-00', NULL, '0000-00-00', '2018-08-26', '2018-08-26 18:50:07'),
+(2, 'Shakil', '321', 2, 'manager', 1521121212, 'yay@gmail.com', 'manager', 'ksdkjs sdnksj ndsj', '2017-08-14', NULL, '0000-00-00', '2018-08-26', '2018-08-26 06:45:38');
 
 -- --------------------------------------------------------
 
@@ -239,7 +245,7 @@ ALTER TABLE `jobpost`
 -- AUTO_INCREMENT for table `applicant`
 --
 ALTER TABLE `applicant`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
 -- AUTO_INCREMENT for table `candidate`
