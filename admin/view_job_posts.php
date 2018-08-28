@@ -106,7 +106,7 @@ include "includes/admin_header.php"
 					echo "<td>".$row['vacancy']."</td>";
 					echo "<td>".$row['salary']."</td>";
 					echo "<td>".$row['browseCatg']."</td>";
-					echo "<td><a href=\"delete.php?id=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a> | <a href=\"editv.php?id=$row[id]\">Edit</a> | <a href=\"singleview.php?id=$row[id]\">View</a></td>";
+					echo "<td><a href=\"includes/delete_job.php?id=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a> | <a href=\"view_job.php?id=$row[id]\">View</a></td>";
 					echo "</tr>";
                 }
 			

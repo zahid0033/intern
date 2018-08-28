@@ -71,6 +71,7 @@
                                     <li><a href="#"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

@@ -64,7 +64,7 @@ $output_result =
                     if(mysqli_num_rows($sub_output) > 0){
                         while($row = mysqli_fetch_assoc($sub_output)){
                             
-                           
+                           $eMail = $row['eMail'];
                             
                             $user_last_activity = $row['eLastActivity'];
                             
@@ -88,7 +88,7 @@ $output_result =
                              <td>'.$empStatus.'</td>
                              <td>'.$vacancy.'</td>
                              <td>'.$status.'</td>                             
-                             <td><a href="../intern/candidate/cancel_applyJob.php?id='.$jobId.'&cMail='.$cMail.'" onClick=\"return confirm("Are you sure you want to delete?")\">Cancel</a> | <a href="../intern/singleJob.php?id='.$jobId.'">View Job</a></td>
+                             <td><a href="../intern/candidate/cancel_applyJob.php?id='.$jobId.'&cMail='.$cMail.'" onClick=\"return confirm("Are you sure you want to delete?")\">Cancel</a> | <a href="../intern/singleJob.php?id='.$jobId.'">View Job</a> | <a href="empProfile.php?user='.$eMail.'">View Profile</a></td></td>
                              </tr>';
                             
                               }

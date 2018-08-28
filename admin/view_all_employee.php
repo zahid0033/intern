@@ -11,6 +11,7 @@ include "includes/admin_header.php"
 
    
    <h2 style="text-align:center">View All Employee</h2>
+    <h3><a href='convertxml.php' style='float:left;' class='btn btn-info'>Add Employee</a></h3>
     <h3><a href='convertxml.php' style='float:right;' class='btn btn-info'>Export as Xml</a></h3><br/><br/>
     
     
@@ -44,7 +45,7 @@ include "includes/admin_header.php"
 					echo "<td>".$row['eMobile']."</td>";
 					echo "<td>".$row['ePosition']."</td>";
 					echo "<td>".$row['eDob']."</td>";
-					echo "<td><a href=\"delete.php?id=$row[eId]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a> | <a href=\"editv.php?id=$row[eId]\">Edit</a> | <a href=\"../empProfile.php?user=$row[eMail]\">View</a></td>";
+					echo "<td><a href=\"includes/delete_employee.php?id=$row[eId]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a> | <a href=\"view_employee.php?id=$row[eId]\">View</a></td>";
 					echo "</tr>";
                 }
 			

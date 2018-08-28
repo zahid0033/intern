@@ -69,12 +69,10 @@
                        
                   echo' <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About us</a></li>
-                        <li><a href="#recent_courses">Services</a></li>
                         <li><a href="#resource_person">Portfolio</a></li>
-                        <li><a href="#webcode_offer">Offer</a></li>
                         <li><a href="jobPost.php">Job Posts</a></li>
                         <li><a href="contact.php">Contact us</a></li>
-                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>';
+                        ';
                       }
                         
                         ?>

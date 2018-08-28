@@ -48,6 +48,7 @@
                             <li>
                                 <a href="view_job_posts.php">View All Posts</a>
                             </li>
+                            
                             <li>
                                 <a href="#">Add Post</a>
                             </li>
@@ -55,7 +56,7 @@
                     </li>
                     
                     <li>
-                        <a href="categories.php"><i class="fa fa-fw fa-wrench"></i> Categories </a>
+                        <a href="view_all_company.php"><i class="fa fa-fw fa-wrench"></i> Company </a>
                     </li>
                     
               <!--      bootstrap-grid.html-->

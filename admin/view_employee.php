@@ -1,14 +1,15 @@
 <?php
     session_start();
-    require "config.php";
-    include "includes/header.php";
-    include "includes/head.php";
-    include "includes/navbar.php";
+
+    
+require "../config.php";
+include "includes/admin_header.php";
+include "includes/admin_navigation.php";
 
 
-    $eMail = $_GET['user'];
+    $eId = $_GET['id'];
 
-       $statement = "select * from employer where eMail = '$eMail' ";
+       $statement = "select * from employer where eId = '$eId' ";
     $result = mysqli_query($conn,$statement);
 
 
@@ -41,34 +42,12 @@
             
             ?>
             
-<div class="top_banner">
-           
-           <div class="col-sm-6 top_banner_left">
-               <h2><?php echo $eName ?>'s PROFILE</h2>
-               <p>Currently you have applied to this jobs . and they are still on pending.</p>
-               <p>They are neither approved nor unapproved</p>
-           </div>
-           <div class="col-sm-6"></div>
-           
-           
-</div>            
+
+       <div id="page-wrapper" class="">               
             <div class="container">
              
              
-              <?php
-                    if(isset($_SESSION['en'])){
-                        
-                        ?>
-                        <button class="btn btn-primary" style="float:right;"  onclick="document.getElementById('modal-wrapper').style.display='block'"> Edit </button>'
-                        
-                        
-                        <?php
-                        
-                    }
-                    else{
-                            echo '';
-                    }
-                ?>
+               <h2 style="text-align:center"><?php echo $eName ?>'s Profile</h2>
                
                              
                
@@ -185,7 +164,7 @@
               </div>
               
             </div>
-            
+</div>
             
             
      <?php 
@@ -194,8 +173,7 @@
         
         }
     }
-include "includes/last.php";
-include "includes/footer.php";
+include "includes/admin_footer.php"
 ?>
 
     
