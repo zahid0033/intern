@@ -12,7 +12,7 @@ include "includes/admin_header.php"
    
    <h2 style="text-align:center">View All Candidates</h2>
     <h3><a href='convertxml.php' style='float:left;' class='btn btn-info'>Add Candidate</a></h3>
-    <h3><a href='convertxml.php' style='float:right;' class='btn btn-info'>Export as Xml</a></h3><br/><br/>
+    <h3><a href='convertxml/candidate_xml.php' style='float:right;' class='btn btn-info'>Export as Xml</a></h3><br/><br/>
     
     
     

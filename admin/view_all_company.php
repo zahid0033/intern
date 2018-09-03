@@ -9,6 +9,7 @@ include "includes/admin_header.php"
 
 
    <h2 style="text-align:center">Company</h2>
+    <h3><a href='convertxml/company_xml.php' style='float:right;' class='btn btn-info'>Export as Xml</a></h3><br/><br/>
 
 <table class="table table-striped table-bordered table-condensed">
 		<tr>

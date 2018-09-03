@@ -4,6 +4,9 @@ body{
 p{
     opacity: .7;
 }
+a{
+    text-decoration: none !important;
+}
 
 
 .gallery{

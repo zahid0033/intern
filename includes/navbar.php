@@ -12,15 +12,37 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
+                      
                        <?php
                        if(isset($_SESSION['un'])){
                             $un= $_SESSION['un'];
+                           
+                           // for counting applied jobs
+                           include "config.php";
+                           $statement = "select * from applicant where cMail = '$un' ";
+                            $result = mysqli_query($conn,$statement);
+
+                            $count = mysqli_num_rows($result);
+                           
+                           // for showing name on navbar
+                           include "config.php";
+                           $query= "select * from candidate where cMail='$un'";
+                           $result=mysqli_query($conn,$query);
+                           if(mysqli_num_rows($result) > 0){
+        
+                                while($row = mysqli_fetch_assoc($result)){
+                                    $cName = $row['cName'];
+                                }
+                           }
+                           
+                           
+                           
                             echo '<li><a href="index.php">Home</a></li>
                                   <li><a href="about.php">About us</a></li>
-                                  <li><a href="appliedJobs.php">Applied Jobs <span style="color: #fbf5f5;border: 2px solid green;border-radius: 100%;font-size: 15px;background: green;padding: 0px 4px 0px 4px;font-weight: 800;">'.$_SESSION['applied_job'].'</span></a></li>   <li><a href="jobPost.php">Job Posts</a></li>
+                                  <li><a href="appliedJobs.php">Applied Jobs <span style="color: #fbf5f5;border: 2px solid green;border-radius: 100%;font-size: 15px;background: green;padding: 0px 4px 0px 4px;font-weight: 800;">'.$count.'</span></a></li>   <li><a href="jobPost.php">Job Posts</a></li>
                                   <li><a href="contact.php">Contact us</a></li>
                                   <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> '.$un.' <b class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> '.$cName.' <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a href="candProfile.php?user='.$un.'"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -42,6 +64,18 @@
                         
                         else if(isset($_SESSION['en'])){
                             $en= $_SESSION['en'];
+                            
+                            
+                           include "config.php";
+                           $query= "select * from employer where eMail='$en'";
+                           $result=mysqli_query($conn,$query);
+                           if(mysqli_num_rows($result) > 0){
+        
+                                while($row = mysqli_fetch_assoc($result)){
+                                    $eName = $row['eName'];
+                                }
+                           }
+                            
                             echo '<li><a href="index.php">Home</a></li>
                                   <li><a href="about.php">About us</a></li>
                                   <li><a href="candidates.php">Candidates <span style="color: #fbf5f5;border: 2px solid green;border-radius: 100%;font-size: 15px;background: green;padding: 0px 4px 0px 4px;font-weight: 800;">'.$_SESSION["candidate_count"].'</span></a></li>
@@ -49,7 +83,7 @@
                                   <li><a href="jobPost.php">Job Posts</a></li>
                                   <li><a href="contact.php">Contact us</a></li>
                                   <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> '.$en.' <b class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> '.$eName.' <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a href="empProfile.php?user='.$en.'"><i class="fa fa-fw fa-user"></i> Profile</a>

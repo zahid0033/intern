@@ -3,10 +3,9 @@ session_start();
 //$location = $_GET['location']; 
 //$category = $_GET['category'];
 require '../config.php';
-   
-       
-     
-       
+
+
+
 
 $output_result ='<div class="jobPost">';            
             
@@ -14,7 +13,7 @@ $output_result ='<div class="jobPost">';
 
 
                     
-                    $query = "";
+$query = "";
 
                 if(isset($_GET['location']) && isset($_GET['category']))
                      {
@@ -82,7 +81,7 @@ $output_result ='<div class="jobPost">';
                                    <div class="panel-heading">
                                       <h2 ><a style="text-decoration:none;color:#2ace22;" href="../intern/singleJob.php?id='.$id.'">'.$title.'</a></h2>
                                       <h4>'.$companyName.'<i class="fa fa-check-circle" aria-hidden="true" style="margin-left:10px;"></i></h4>
-                                      <h4>By Admin '.$postTime.'</h4>
+                                      <h4> Posted on : '.$postTime.'</h4>
                                    </div>
                                    <div class="panel-body">
                                        
@@ -131,5 +130,4 @@ echo $output_result;
             
             
 
-?>     
-        
+?>

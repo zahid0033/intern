@@ -13,7 +13,7 @@ include "includes/navbar.php";
 <div class="top_banner">
            
            <div class="col-sm-6 top_banner_left">
-               <h2>Candidated Applied For Your Jobs</h2>
+               <h2>Candidates Applied For Your Jobs</h2>
                <p>Currently you have applied to this jobs . and they are still on pending.</p>
                <p>They are neither approved nor unapproved</p>
            </div>

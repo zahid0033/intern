@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Company>
+ <info>
+  <id>4</id>
+  <Name>Raven System Ltd ( A Sister Conc</Name>
+  <Mail>mugdapara Dhaka</Mail>
+  <Password>https://github.com/zahid0033/intern</Password>
+  <deletionTime>Business</deletionTime>
+ </info>
+ <info>
+  <id>3</id>
+  <Name>loud Software Solution Ltd</Name>
+  <Mail>Mirpur 10,Dhaka</Mail>
+  <Password>https://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp</Password>
+  <deletionTime>Employee</deletionTime>
+ </info>
+ <info>
+  <id>2</id>
+  <Name>Cloud Software Solution Ltd</Name>
+  <Mail>Banasree Dhaka</Mail>
+  <Password>https://www.youtube.com/watch?v=mDotS5BDqRM</Password>
+  <deletionTime>startup</deletionTime>
+ </info>
+ <info>
+  <id>1</id>
+  <Name>Agrani Bank</Name>
+  <Mail>Motijheel Dhaka,Bangladesh</Mail>
+  <Password>https://www.youtube.com/</Password>
+  <deletionTime>Business</deletionTime>
+ </info>
+</Company>

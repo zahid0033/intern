@@ -162,7 +162,8 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Company Address</label>
-                    <input type="text" name="compAddress" class="form-control" id="exampleInputPassword1" placeholder="Permanent Address" value="<?php echo $compAddress ?>">
+                    
+                    <textarea class="form-control" rows="5"  name="compAddress" placeholder="Permanent Address"><?php echo $compAddress ?></textarea>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Company Type</label>
