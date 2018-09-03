@@ -43,6 +43,9 @@
 <script src="https://cdn.jsdelivr.net/jquery.form/4.2.1/jquery.form.min.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="http://code.jquery.com/ui/1.12.1/jquery-ui+.js"></script>
+<script type="text/javascript" src="sweetalert.min.js">import swal from 'sweetalert';
+		</script>
+		 <script src="validation.min.js"></script>
 			  
 			  
 <!--

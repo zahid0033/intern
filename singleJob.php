@@ -71,7 +71,6 @@
             }
     
     
-            mysqli_close($conn);
         ?>
         
         
@@ -118,12 +117,27 @@
                    
                    <?php
                         if(isset($_SESSION['un'])){
-                            echo '<a href="candidate/applyJob.php?id='.$id.' " class="btn btn-primary" style="float:right;"> Apply </a>';
+                            
+                            $cMail = $_SESSION['un'];
+                            $sub_query = "select * from applicant where cMail= '$cMail' and jobId = '$id'";
+                            $result = mysqli_query($conn, $sub_query);
+                            
+                            if(mysqli_num_rows($result)>0){
+                                echo '<button class="btn btn-primary" style="float:right;"> You have Applied already </button>';
+                            }
+                            else{
+                                echo '<a href="candidate/applyJob.php?id='.$id.' " class="btn btn-primary" style="float:right;"> Apply </a>';
+                            }
+                            
+                            
                             
                         }
                         else if(isset($_SESSION['en'])){
                             echo '<a href="index.php" class="btn btn-primary" style="float:right;"> ok </a>';
                         }
+                      
+                      
+           mysqli_close($conn);
                    ?>
                    
                </div>

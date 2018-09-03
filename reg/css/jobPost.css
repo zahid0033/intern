@@ -1,0 +1,174 @@
+body{
+	background:linear-gradient(to bottom righ,white,#bcdc4);
+	height:4000px;
+}
+.header1{
+	
+	position:fixed;
+	width:100%;
+	height:80px;
+	background:#196be6;
+	top:0;
+	left:0;
+	color:white;
+	z-index:7;
+}
+#img{
+	float:top;
+	
+}
+#profilearea1{
+	top:15px;
+	left:820px;
+	height:40px;
+	
+}
+#profilearea2{
+	top:20px;
+	left:900px;
+	height:20px;
+	font-size:20px;
+	font-family;verdana;
+}
+a{
+	color:white;
+	text-decoration:none;
+}
+#profilearea3{
+	top:10px;
+	left:970px;
+	height:30px;
+	font-size:30px;
+	font-family :verdana;
+}
+#profilearea4{
+	top:20px;
+	left:990px;
+	height:20px;
+	font-size:20px;
+	font-family:verdana;
+}
+#profilearea5{
+	top:10px;
+	left:1050px;
+	height:30px;
+	font-size:30px;
+	font-family:verdana;
+}
+#profilearea6{
+	top:20px;
+	left:1060px;
+	height:20px;
+	font-size:20px;
+	font-family:verdana;
+}
+#searcharea{
+	top:17px;
+	left:200px;
+	height:40px;
+}
+#searchbox{
+	
+	width: 500px;
+	height: 26px;
+	background:white;
+	padding:5px;
+	outline:none;
+	border-position:465px;
+	border-radius: 10px/10px;
+	background-repeat:no-repeat;
+}
+
+#finf{
+	top:15px;
+	left:1015px;
+	height:30px;
+}
+.sidebar{
+	position:absolute;
+	width:200px;
+	height:100%;
+	background:#a3bbe0;
+	top:80px;
+	left:0;
+	color:white;
+}
+
+
+
+.centercont{
+	
+	position:absolute;
+	width:800px;
+	height:210px;
+	background:white-space;
+	top:80px;
+	left:220px;
+	-webkit-box-shadow:0 3px 8px rgba(0, 0, 0, .25);
+}
+#column-1{left:0px;
+top:0px;
+background:white;
+width:790px;
+height:200px;
+border-radius:3px/3px;
+font-size:15px;
+font-family:verdana;
+color:#1b6192;
+padding-left:10px;
+
+padding-top:10px;
+}
+#postpos{left:450px;
+top:170px;
+width:85px;
+height:30px;}
+#postbox{
+position:absolute;
+height:105px;
+outline:none;
+
+border:white;
+background:#e9f0f2;
+
+width:580px;}
+#postboxpos{top:45px;
+left:10px;
+height:105px;
+width:580px;
+z-index:5;}
+#buttonpost{width:85px;
+height:30px;
+right:50px;
+border-radius:4px/4px;
+background:#142170;
+font-size:15px;
+outline:none;
+color:white;
+}
+
+.post{
+	top:300px;
+	left:220px;
+	position:absolute;
+	background:white;
+	width:780px;
+	height:1000px;
+	border-radius: 3px/3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top:10px;
+	
+	-webkit-box-shadow:0 3px 8px rgba(0, 0, 0, .25);
+}
+#post1{
+	
+	width:760px;
+	height:210px;
+	border-radius: 3px/3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top:10px;
+	-webkit-box-shadow:0 3px 8px rgba(0, 0, 0, .30);
+}
+

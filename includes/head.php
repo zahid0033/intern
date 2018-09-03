@@ -29,7 +29,7 @@
                                
                                <?php 
                                 
-                                    if(isset($_SESSION['un'])||isset($_SESSION['en'])){
+                                    if(isset($_SESSION['un'])||isset($_SESSION['en']) || isset($_SESSION['an'])){
                                         echo '';
                                     }
                                     else{
@@ -43,15 +43,15 @@
                                           <div class="dropdown-content">
                                             <a href="loginCandidate.php">Candidate</a>
                                             <a href="loginEmployee.php">Employee</a>
-                                            <a href="../Intern/admin/index.php">Admin</a>
+                                            <a href="loginAdmin.php">Admin</a>
                                           </div>
                                         </div>
                                         <spqn style="margin-right:5px;"> / </spqn>
                                         <div class="dropdown">
                                           <a class="dropbtn" style="text-decoration:none;"> Register</a>
                                           <div class="dropdown-content">
-                                            <a href="regv.php">Candidate</a>
-                                            <a href="#">Employee</a>
+                                            <a href="reg/reg_candidate.php">Candidate</a>
+                                            <a href="reg/login_intern.php">Employee</a>
                                           </div>
                                         </div>
 
