@@ -117,7 +117,7 @@ require "config.php";
                             echo "<td>".$row['cMail']."</td>";
                             echo "<td>".$vacancy."</td>";
                             echo "<td>".$status."</td>";
-                            echo "<td><a href=\"../intern/employer/candidates_unapprove.php?id=$applicant_row_id\" onClick=\"return confirm('Are you sure you want to delete?')\">Unapprove</a> | <a href=\"../intern/employer/candidates_approve.php?jobId=".$id."&cMail=".$cMail."\">Approve</a> | <a href=\"candProfile.php?user=$cMail\">View Profile</a></td>";
+                            echo "<td><a href=\"../intern/employer/candidates_unapprove.php?id=$applicant_row_id\" onClick=\"return confirm('Are you sure you want to delete?')\">Unapprove</a> | <a href=\"../intern/employer/candidates_approve.php?jobId=".$id."&cMail=".$cMail."\" >Approve</a> | <a href=\"candProfile.php?user=$cMail\">View Profile</a></td>";
                             echo "</tr>";
                                     
                                     
@@ -140,10 +140,12 @@ require "config.php";
         
     }
     $_SESSION['candidate_count'] = $count;               
-    echo $count;
+    
 ?>
         </table>
 </div>
+
+
 
  <script>
     $(document).ready(function(){
