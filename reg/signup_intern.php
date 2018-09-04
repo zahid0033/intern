@@ -35,7 +35,7 @@ session_start();
 			
 			mysqli_query($conn,$sql3);
 			mysqli_query($conn,$sql4);
-			header('location:login_intern.php?val=0');
+			header('location:../loginEmployee.php');
 			
 		}else
 			die("query failed".mysqli_error($conn));

@@ -21,22 +21,22 @@ $query = "";
                                 $category = $_GET['category'];
                                    $query = "select * from jobpost where browseCatg = '$category' AND deletedAt is null order by id desc ";
 
-                                echo "2";
+                                
                             }
                             else if(strcmp($_GET['location'],"")!=0 && strcmp($_GET['category'],"")==0){
                                 $location= $_GET['location'];
                                  $query = "select * from jobpost where jobLocation = '$location' AND deletedAt is null order by id desc ";
-                                echo "1";
+                                
                             }
                            else if(strcmp($_GET['location'],"")!=0 && strcmp($_GET['category'],"")!=0){
                                 $category = $_GET['category'];
                                 $location= $_GET['location'];
                                  $query = "select * from jobpost where jobLocation = '$location' AND browseCatg = '$category' AND deletedAt is null order by id desc ";
-                                echo "4";
+                                
                             }
                           else if(strcmp($_GET['location'],"")==0 && strcmp($_GET['location'],"")==0){
                               $query = "select * from jobpost where deletedAt is null order by id desc ";
-                              echo "5";
+                              
                           }
 
                     

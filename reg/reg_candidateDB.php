@@ -10,7 +10,7 @@ session_start();
 		if(mysqli_query($conn,$sql))
 		{
 			echo "here2";
-		    header("location:reg_candidate.php?val=0");
+		    header("location:../loginCandidate.php");
 
 			
 		}else

@@ -48,6 +48,26 @@ else if(isset($_POST['submit'])){
             mysqli_close($conn);
     
 }
+else if(isset($_POST['admin'])){
+    
+    $statement="select aemail, apass from admin where aemail='$cMail' and apass='$cPass'";
+
+    $result = mysqli_query($conn, $statement);
+
+            if (mysqli_num_rows($result) == 1)
+            {
+            	$_SESSION['an']= $cMail;
+            	header("location:admin/index.php");
+               
+    		}
+            else
+            {
+                echo "User Name or Password is wrong";
+                header("location:loginAdmin.php");
+            }
+            mysqli_close($conn);
+    
+}
 
 
 

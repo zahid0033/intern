@@ -11,7 +11,7 @@ include "includes/admin_header.php"
 
    
    <h2 style="text-align:center">View All Employee</h2>
-    <h3><a href='convertxml.php' style='float:left;' class='btn btn-info'>Add Employee</a></h3>
+    <h3><a href='../reg/login_intern.php' style='float:left;' class='btn btn-info'>Add Employee</a></h3>
     <h3><a href='convertxml/employee_xml.php' style='float:right;' class='btn btn-info'>Export as Xml</a></h3><br/><br/>
     
     

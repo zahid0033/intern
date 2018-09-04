@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Candidates>
+ <info>
+  <id>5</id>
+  <Name>shakib</Name>
+  <Mail>zai@gmail.com</Mail>
+  <Gender>male</Gender>
+  <Mobile>0152143424</Mobile>
+  <Skill>java,php</Skill>
+  <Degree>BSC</Degree>
+ </info>
+ <info>
+  <id>4</id>
+  <Name>shakil</Name>
+  <Mail>zay@gmail.com</Mail>
+  <Gender>female</Gender>
+  <Mobile>01521434247</Mobile>
+  <Skill>laravel,php</Skill>
+  <Degree>java</Degree>
+ </info>
+ <info>
+  <id>3</id>
+  <Name>shakil</Name>
+  <Mail>zaf@gmail.com</Mail>
+  <Gender>male</Gender>
+  <Mobile>1521434247</Mobile>
+  <Skill></Skill>
+  <Degree>BSC in CSE</Degree>
+ </info>
+ <info>
+  <id>2</id>
+  <Name>Zahid</Name>
+  <Mail>zaz@gmail.com</Mail>
+  <Gender>male</Gender>
+  <Mobile>01521434247</Mobile>
+  <Skill>Laravel,PHP,nodeJs</Skill>
+  <Degree>B.S.C in CSE</Degree>
+ </info>
+ <info>
+  <id>1</id>
+  <Name>?????????</Name>
+  <Mail>asieb.hasan.supto@gmail.com</Mail>
+  <Gender>????</Gender>
+  <Mobile>0</Mobile>
+  <Skill>????????</Skill>
+  <Degree></Degree>
+ </info>
+</Candidates>

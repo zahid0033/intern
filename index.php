@@ -53,13 +53,11 @@ $location = array("Dhaka","Chittagong","Rajshahi","Rangpur","Barishal","Khulna",
             <div class="category ">
                   
                   <div class="col-sm-8 catgDegree">
-                      <h3 style="padding-top: 3em;">Hello Interns</h3>
-                     
-                      <h4>We are here for you now </h4>
-                      
+                      <h3>Discover Internship</h3>
                       <h5>This is one of the largest site for searching interns all over the country</h5>
-                      
-                      <p>Age 25 to 40 years Both males and females are allowed to apply Must be energetic, able to work under pressure and meet deadlines</p>
+                      <h1><b></b></h1><br>
+           
+			          <?php include "info.php";?>
                       
                       <div class="col-sm-12 catg_search">
                       
@@ -150,12 +148,11 @@ $location = array("Dhaka","Chittagong","Rajshahi","Rangpur","Barishal","Khulna",
       <div class="container col-sm-12">
       
        <div class="col-sm-3 category2Left">
-           <h3>Hello bangladesh</h3>
+           <h3>Hello Interns</h3>
            <h5>We are here for you</h5>
-           <p>Who wants internee urgently just click here</p>
-           <p>Who wants internee urgently just click here Who wants internee urgently just click here Who wants internee urgently just click here</p>
+           <p>Its a site to connect interns with many companies</p>
+           <p>It reduce the difficulties the finding internship across all ober the country</p>
            
-           <button class="btn btn-primary" style="margin-top:2em;">Visit Page</button>
        </div>
         <div class="col-sm-9 category2">
             <h3 style="margin-left: 15px;color:#17aa10;"><i class="fa fa-bars fa-1x" aria-hidden="true" style="margin-right:10px;"></i>Categories</h3>
@@ -218,7 +215,7 @@ $location = array("Dhaka","Chittagong","Rajshahi","Rangpur","Barishal","Khulna",
     <!-- ************ search job ************ -->
     <section id="search" class="search">
         <div class="container col-sm-12">
-            <p>have you any thing ? </p>
+            <p class="text-center" style="color:white;font-size:2em">Making your search more easier</p>
             <form action="includes/search.php" method="post">
                
                 <div class="form-group col-sm-7 ">
@@ -258,50 +255,7 @@ $location = array("Dhaka","Chittagong","Rajshahi","Rangpur","Barishal","Khulna",
         </div>
     </section>
  
-    <!-- ************ Recent course ************** -->
-    <section id="recent_courses">
-        <div class="container">
-            <div class="heading">
-                <h2>Recent course</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
-            </div>
-            
-            <div class="row">
-                <div class="col-sm-4 services"> 
-                    <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy</p>
-                </div>
-                <div class="col-sm-4 services"> 
-                    <i class="fa fa-wordpress fa-3x" aria-hidden="true"></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy</p>
-                </div>
-                <div class="col-sm-4 services">
-                    <i class="fa fa-joomla fa-3x" aria-hidden="true"></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy</p>
-                </div>
-                <div class="col-sm-4 services">
-                    <i class="fa fa-drupal fa-3x" aria-hidden="true"></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy</p>
-                </div>
-                <div class="col-sm-4 services">
-                    <i class="fa fa-html5 fa-3x" aria-hidden="true"></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy</p>
-                </div>
-                <div class="col-sm-4 services">
-                    <i class="fa fa-paint-brush fa-3x" aria-hidden="true"></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy</p>
-                </div>
-            </div>
-      
-            
-        </div>
-    </section>
+
     
     <!-- *************** Webcode Gallery ******************* -->
     <section id="webcode_gallery">
@@ -386,115 +340,9 @@ $location = array("Dhaka","Chittagong","Rajshahi","Rangpur","Barishal","Khulna",
         </div>
     </section>
     
-    <!--  ************** webcode offer ***************-->
-    <section id="webcode_offer">
-        <div class="container">
-            <div class="heading">
-                <h2>Web Code Offer</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
-            </div>
-            <div class="offers">
-                <div class="row">
-                    <div class="col-sm-4 offers1">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a href="#"><img src="images/creative.png" alt="" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>Creative Design</h3>
-                                <p>Holisticly impct granlar scllaboron target listic aileaership after state of the art process improvements.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 offers1">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a href="#"><img src="images/coding.png" alt=""></a>
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>24/7 Online support</h3>
-                                <p>Holisticly impct granlar scllaboron target listic aileaership after state of the art process improvements.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 offers1">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a href="#"><img src="images/responsive.png" alt=""></a>
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>Responsive design</h3>
-                                <p>Holisticly impct granlar scllaboron target listic aileaership after state of the art process improvements.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 offers1">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a href="#"><img src="images/coding.png" alt=""></a>
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>Awsome Coding</h3>
-                                <p>Holisticly impct granlar scllaboron target listic aileaership after state of the art process improvements.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 offers1">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a href="#"><img src="images/cashback.png" alt=""></a>
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>100% Cash Back</h3>
-                                <p>Holisticly impct granlar scllaboron target listic aileaership after state of the art process improvements.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 offers1">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a href="#"><img src="images/bestoffer.png" alt=""></a>
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>Best Offer</h3>
-                                <p>Holisticly impct granlar scllaboron target listic aileaership after state of the art process improvements.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     
-    <!-- ***************** resource person *********** -->
-    <section id="resource_person">
-        <div class="container">
-            <div class="heading">
-                <h2>RESOURCE PERSON</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 info"> <img src="images/person1.jpg" alt="" class="img-responsive">
-                    <div class="info_text">
-                        <h3>Mazedul Islam</h3>
-                        <p>UI/UX Designer</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 info"> <img src="images/person2.jpg" alt="" class="img-responsive">
-                    <div class="info_text">
-                        <h3>Mazedul Islam</h3>
-                        <p>UI/UX Designer</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 info"> <img src="images/person3.jpg" alt="" class="img-responsive">
-                    <div class="info_text">
-                        <h3>Mazedul Islam</h3>
-                        <p>UI/UX Designer</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     
     <!-- ***************** What people say **************  -->
     <section id="what_people_say">
@@ -558,35 +406,7 @@ $location = array("Dhaka","Chittagong","Rajshahi","Rangpur","Barishal","Khulna",
         </div>
     </section>
     
-    <!-- *************** Latest_blog **************** -->
-    <section id="latest_blog">
-        <div class="container">
-            <div class="heading">
-                <h2>our Latest blog</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 blog"> <img src="images/gallery1.jpg" alt="" class="img-responsive">
-                    <div class="blog1">
-                        <h3>Machanically hire machine</h3> <i class="fa fa-user" aria-hidden="true"></i><span>robot</span> <i class="fa fa-comments-o" aria-hidden="true"></i><span>12 comments</span> <i class="fa fa-eye" aria-hidden="true"></i><span>120</span> </div>
-                    <div class="blog2">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p> <a href="#" class="btn btn-custom1">Click here</a> </div>
-                </div>
-                <div class="col-sm-4 blog"> <img src="images/gallery2.jpg" alt="" class="img-responsive">
-                    <div class="blog1">
-                        <h3>Machanically hire machine</h3> <i class="fa fa-user" aria-hidden="true"></i><span>robot</span> <i class="fa fa-comments-o" aria-hidden="true"></i><span>12 comments</span> <i class="fa fa-eye" aria-hidden="true"></i><span>120</span> </div>
-                    <div class="blog2">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p> <a href="#" class="btn btn-custom1">Click here</a> </div>
-                </div>
-                <div class="col-sm-4 blog"> <img src="images/gallery3.jpg" alt="" class="img-responsive">
-                    <div class="blog1">
-                        <h3>Machanically hire machine</h3> <i class="fa fa-user" aria-hidden="true"></i><span>robot</span> <i class="fa fa-comments-o" aria-hidden="true"></i><span>12 comments</span> <i class="fa fa-eye" aria-hidden="true"></i><span>120</span> </div>
-                    <div class="blog2">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p> <a href="#" class="btn btn-custom1">Click here</a> </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     
     <!-- **************** Our client logo ************** -->
     <section id="client_logo">

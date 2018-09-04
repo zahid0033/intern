@@ -26,7 +26,6 @@ include "../includes/header.php";
                        
                   echo' <li><a href="../index.php">Home</a></li>
                         <li><a href="../about.php">About us</a></li>
-                        <li><a href="#resource_person">Portfolio</a></li>
                         <li><a href="../jobPost.php">Job Posts</a></li>
                         <li><a href="../contact.php">Contact us</a></li>
                         ';
@@ -45,7 +44,7 @@ include "../includes/header.php";
        
        
  
-        <div class="container" style="background: #dceefe">
+        <div class="container" >
         <div class="empReg">
             <h2 style="text-align: center;"> Emloyee Registration</h2><hr>
            

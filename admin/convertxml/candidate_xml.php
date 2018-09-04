@@ -14,11 +14,14 @@
     $xml->startElement('Candidates');
     while ($row = mysqli_fetch_assoc($res)) {
       $xml->startElement("info");
-      $xml->writeElement("id", $row['id']);
+      $xml->writeElement("id", $row['cId']);
       $xml->writeElement("Name", $row['cName']);
       $xml->writeElement("Mail", $row['cMail']);
-	  $xml->writeElement("Password", $row['cPass']);
-      $xml->writeElement("deletionTime", $row['cLogin']);
+      $xml->writeElement("Gender", $row['cGender']);
+      $xml->writeElement("Mobile", $row['cMobile']);
+      $xml->writeElement("Skill", $row['cSkill']);
+      $xml->writeElement("Previous Exp", $row['cPreviousExp']);
+      $xml->writeElement("Degree", $row['cDegree']);
       $xml->endElement();
     }
     $xml->endElement();

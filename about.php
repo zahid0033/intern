@@ -7,32 +7,35 @@ include "includes/navbar.php";
 
     <!-- ************ About our Code ************ -->
     
-    <div class="top_banner">
+    
+        <div class="top_banner">
            
            <div class="col-sm-6 top_banner_left">
                <h2>About Us</h2>
-               <p>Currently you have applied to this jobs . and they are still on pending.</p>
-               <p>They are neither approved nor unapproved</p>
+               <p>Interns.com, a Chegg service, is the world’s largest student-focused </p>
+               <p> employers and higher education institutions together in one centralized location.</p>
            </div>
            <div class="col-sm-6"></div>
            
            
        </div>
+       
     <section id="about_our_code">
         <div class="container">
            <div class="heading">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+            <p>Over 300 colleges and schools have integrated Internships.com into the tools and applications they provide for their students.  </p>
         </div>
             <div class="about">
                 <div class="col-sm-6 col-md-6"> <img src="images/grouppic.jpg" alt="group" class="img-responsive"> </div>
                 <div class="col-sm-6 col-md-6">
                     <div class="para">
-                        <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has the industry's standard dummy text ever since the 1500s, when an unknownLorem Ipsum is simply dummy text of the printing and
+                        <h4>Join Us!</h4>
+                        <p>
+                            Since 2007, Chegg has been transforming the way millions of students learn by connecting them to the people and tools needed to succeed in college. Students on more than 7,000 campuses nationwide use Chegg for internships, homework help, courses, textbook and eTextbook options, student deals, scholarships and more!
                             <br>
                             <br>
-                            <br> typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-                        <button class="btn btn-success"> Meet Our Team </button>
+                            <br> Start your internship search now by browsing opportunities by major, location, or company name. Employers, create an account to post internships for free.
+                        </p>
                     </div>
                 </div>
             </div>

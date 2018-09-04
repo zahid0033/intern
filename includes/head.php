@@ -11,16 +11,10 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="contact">
-                                <a href="#"><img src="images/languages.png" alt=""></a>
-                                <p>English</p>
-                            </div>
+                           
                         </div>
                         <div class="col-sm-4">
-                            <div class="contact">
-                                <a href="#"><img src="images/email.png" alt=""></a>
-                                <p>English</p>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-sm-8">
@@ -64,7 +58,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <ul class="list-inline pull-right social">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.facebook.com/zahidhossain123"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>

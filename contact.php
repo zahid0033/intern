@@ -27,8 +27,8 @@ include "includes/navbar.php";
             <div class="adress">
                 <div class="row">
                     <div class="col-sm-4 adress1"> <i class="fa fa-mobile" aria-hidden="true"></i>
-                        <div class="adress1_text"> <span><span>+ 326 581 2547 , 021 583</span>
-                            <br><span>+88 019 239 702 12, </span></span>
+                        <div class="adress1_text"> <span><span>+ 8801521434247</span>
+                            <br><span>+8801620980710, </span></span>
                         </div>
                     </div>
                     <div class="col-sm-4 adress1"> <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -37,7 +37,7 @@ include "includes/navbar.php";
                         </div>
                     </div>
                     <div class="col-sm-4 adress1"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <div class="adress1_text"> <span><span>upport@gmail.com</span>
+                        <div class="adress1_text"> <span><span>asieb.hasan145@gmail.com</span>
                             <br><span>Info@gmail.com </span></span>
                         </div>
                     </div>
@@ -46,18 +46,18 @@ include "includes/navbar.php";
             <div class="adress2">
                <div class="row">
                 <div class="col-sm-6">
-                   <form action="">
+                   <form method="POST" action="sendEmail.php">
                         <div class="form-group">
-                            <input type="text" name="" class="form-control required" placeholder="Your Name *">
+                            <input type="text" name="name" class="form-control required" placeholder="Your Name *">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="" class="form-control required" placeholder="Your Email *">
+                            <input type="text" name="email" class="form-control required" placeholder="Your Email *">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" class="form-control" rows="6" placeholder="Your Message *"></textarea>
+                            <textarea name="body" id="" class="form-control" rows="6" placeholder="Your Message *"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="" class="form-control">
+                            <input type="submit"  name="submit" class="form-control">
                         </div>
                     </form>
                 </div>

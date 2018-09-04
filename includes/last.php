@@ -8,7 +8,7 @@
                     </div>
                     <hr>
                     <div class="logo_text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                        <p>Internships.com is the world’s largest internship marketplace bringing students, employers and higher education institutions together in one centralized location. We specialize in helping students and young professionals find the right internship to kick start their career.</p>
                     </div>
                     <br>
                     <div class="follow_us">

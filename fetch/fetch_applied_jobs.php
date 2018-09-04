@@ -101,7 +101,6 @@ $output_result =
 
     
     $_SESSION['applied_job'] = $count;
-    echo $count;
 
 
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Candidates>
+ <info>
+  <id>2</id>
+  <Name>Shakil</Name>
+  <Mail>yay@gmail.com</Mail>
+  <Password>321</Password>
+  <compId>2</compId>
+  <Mobile>1521121212</Mobile>
+  <Position>manager</Position>
+  <DateOFBirth>2017-08-14</DateOFBirth>
+ </info>
+ <info>
+  <id>1</id>
+  <Name>Hasib</Name>
+  <Mail>zaz@yahoo.com</Mail>
+  <Password>321</Password>
+  <compId>1</compId>
+  <Mobile>125454</Mobile>
+  <Position>manager</Position>
+  <DateOFBirth>0000-00-00</DateOFBirth>
+ </info>
+</Candidates>
